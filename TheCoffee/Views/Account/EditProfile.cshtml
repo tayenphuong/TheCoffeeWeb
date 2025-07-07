@@ -1,0 +1,50 @@
+﻿@model TheCoffee.Models.User
+@{
+    ViewBag.Title = "Cập nhật hồ sơ";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cập nhật hồ sơ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="col-md-6 mx-auto card p-4 shadow-sm">
+            <h4 class="mb-3 text-center">Cập nhật thông tin cá nhân</h4>
+
+            @if (ViewBag.Success != null)
+            {
+                <div class="alert alert-success">@ViewBag.Success</div>
+            }
+            @if (ViewBag.Fail != null)
+            {
+                <div class="alert alert-danger">@ViewBag.Fail</div>
+            }
+
+            @using (Html.BeginForm("EditProfile", "Account", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                @Html.HiddenFor(m => m.UserID)
+
+                <div class="mb-3">
+                    <label>Họ tên</label>
+                    @Html.TextBoxFor(m => m.FullName, new { @class = "form-control", required = true })
+                </div>
+                <div class="mb-3">
+                    <label>Email</label>
+                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control", required = true, type = "email" })
+                </div>
+                <div class="mb-3">
+                    <label>Số điện thoại</label>
+                    @Html.TextBoxFor(m => m.Phone, new { @class = "form-control", required = true })
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Lưu thay đổi</button>
+            }
+            <a href="@Url.Action("Profile", "Account")" class="btn btn-secondary mt-3 w-100">Quay lại hồ sơ</a>
+        </div>
+    </div>
+</body>
+</html>

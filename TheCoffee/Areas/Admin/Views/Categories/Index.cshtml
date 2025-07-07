@@ -1,0 +1,36 @@
+﻿@model IEnumerable<TheCoffee.Models.Category>
+
+@{
+    ViewBag.Title = "Danh mục sản phẩm";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2 class="mb-4">Danh sách danh mục</h2>
+
+<p>
+    @Html.ActionLink("Thêm mới", "Create", null, new { @class = "btn btn-primary btn-sm" })
+</p>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-sm align-middle">
+        <thead class="table-dark text-center">
+            <tr>
+                <th style="width: 70%;">Tên danh mục</th>
+                <th style="width: 30%;" class="text-nowrap">Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.CategoryName)</td>
+                    <td class="text-nowrap">
+                        @Html.ActionLink("Sửa", "Edit", new { id = item.CategoryID }, new { @class = "btn btn-sm btn-warning me-1" })
+                        @Html.ActionLink("Chi tiết", "Details", new { id = item.CategoryID }, new { @class = "btn btn-sm btn-info me-1" })
+                        @Html.ActionLink("Xoá", "Delete", new { id = item.CategoryID }, new { @class = "btn btn-sm btn-danger" })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

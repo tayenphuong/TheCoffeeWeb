@@ -1,0 +1,105 @@
+﻿@model List<TheCoffee.Models.ViewModel.CartItemViewModel>
+@{
+    ViewBag.Title = "Giỏ hàng của bạn";
+}
+@Html.AntiForgeryToken()
+
+<div class="container my-5">
+    <h2 class="mb-4 text-center">Giỏ hàng của bạn</h2>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info text-center">
+            Giỏ hàng của bạn đang trống.
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-bordered align-middle">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Ảnh</th>
+                        <th>Sản phẩm</th>
+                        <th>Giá</th>
+                        <th>Số lượng</th>
+                        <th>Tổng</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr data-product-id="@item.ProductID">
+                            <td class="text-center" style="width: 100px;">
+                                @if (!string.IsNullOrEmpty(item.Img))
+                                {
+                                    <img src="@Url.Content(item.Img)" alt="Ảnh" width="80" class="img-thumbnail" />
+                                }
+                                else
+                                {
+                                    <span class="text-muted">Chưa có</span>
+                                }
+                            </td>
+                            <td>@item.ProductName</td>
+                            <td class="text-end">@item.Price.ToString("N0") đ</td>
+                            <td class="text-center">
+                                <input type="number" name="quantity" min="1"
+                                       class="form-control text-center d-inline-block"
+                                       style="width: 100px;"
+                                       value="@item.Quantity"
+                                       onchange="updateQuantityAjax(@item.ProductID, this.value)" />
+                            </td>
+                            <td class="text-end" id="subtotal-@item.ProductID">
+                                @((item.Price * item.Quantity).ToString("N0")) đ
+                            </td>
+                            <td class="text-center">
+                                @Html.ActionLink("Xóa", "Remove", "Cart", new { productId = item.ProductID }, new { @class = "btn btn-sm btn-outline-danger" })
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <div class="text-end mt-4">
+                <h4>
+                    Tổng cộng:
+                    <span class="text-danger fw-bold" id="cart-total">
+                        @Model.Sum(x => x.Price * x.Quantity).ToString("N0") đ
+                    </span>
+                </h4>
+                <a href="@Url.Action("Checkout", "Cart")" class="btn btn-warning btn-lg mt-3">
+                    <i class="fas fa-shopping-cart me-1"></i> Thanh toán
+                </a>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        function updateQuantityAjax(productId, quantity) {
+            fetch('@Url.Action("UpdateQuantityAjax", "Cart")', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: 'productId=' + productId + '&quantity=' + quantity
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    document.getElementById('subtotal-' + productId).textContent = data.subtotal.toLocaleString('vi-VN') + ' đ';
+                    document.getElementById('cart-total').textContent = data.total.toLocaleString('vi-VN') + ' đ';
+                    updateCartBadge();
+                } else {
+                    alert(data.message || "Cập nhật thất bại");
+                }
+            })
+            .catch(err => {
+                console.error("Lỗi cập nhật:", err);
+            });
+        }
+    </script>
+}
+

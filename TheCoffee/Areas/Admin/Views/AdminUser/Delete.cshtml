@@ -1,0 +1,40 @@
+﻿@model TheCoffee.Models.User
+@{
+    ViewBag.Title = "Xóa người dùng";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container my-4">
+    <h2>Xác nhận xóa người dùng</h2>
+
+    <div class="alert alert-warning">
+        Bạn có chắc chắn muốn xóa người dùng <strong>@Model.FullName</strong> không?
+    </div>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>Tài khoản</th>
+            <td>@Model.UserName</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>@Model.Email</td>
+        </tr>
+        <tr>
+            <th>Số điện thoại</th>
+            <td>@Model.Phone</td>
+        </tr>
+        <tr>
+            <th>Vai trò</th>
+            <td>@Model.Role?.RoleName</td>
+        </tr>
+    </table>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        <input type="hidden" name="id" value="@Model.UserID" />
+        <button type="submit" class="btn btn-danger">Xóa</button>
+        <a href="@Url.Action("Index")" class="btn btn-secondary">Hủy</a>
+    }
+</div>

@@ -1,0 +1,55 @@
+﻿@model TheCoffee.Models.Product
+
+@{
+    ViewBag.Title = "Thêm sản phẩm mới";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2 class="mb-4">Thêm sản phẩm</h2>
+
+@using (Html.BeginForm("Create", "Products", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="row g-3">
+        <div class="col-md-6">
+            @Html.LabelFor(m => m.ProductName, htmlAttributes: new { @class = "form-label" })
+            @Html.TextBoxFor(m => m.ProductName, new { @class = "form-control" })
+        </div>
+
+        <div class="col-md-6">
+            @Html.LabelFor(m => m.Price, htmlAttributes: new { @class = "form-label" })
+            @Html.TextBoxFor(m => m.Price, new { @class = "form-control", type = "number", step = "1000" })
+        </div>
+
+        <div class="col-md-6">
+            @Html.Label("Hình ảnh", htmlAttributes: new { @class = "form-label" })
+            @Html.TextBoxFor(model => model.Img, new { @class = "form-control", placeholder = "https://..." })
+            @Html.ValidationMessageFor(model => model.Img)
+           
+        </div>
+
+        <div class="col-md-6">
+            @Html.LabelFor(m => m.CategoryID, "Danh mục", htmlAttributes: new { @class = "form-label" })
+            @Html.DropDownList("CategoryID", null, "-- Chọn danh mục --", new { @class = "form-select" })
+        </div>
+
+        <div class="col-md-6">
+            @Html.LabelFor(m => m.StatusID, "Trạng thái", htmlAttributes: new { @class = "form-label" })
+            @Html.DropDownList("StatusID", null, "-- Chọn trạng thái --", new { @class = "form-select" })
+        </div>
+
+        <div class="col-12">
+            @Html.LabelFor(m => m.Description, htmlAttributes: new { @class = "form-label" })
+            @Html.TextAreaFor(m => m.Description, new { @class = "form-control", rows = 4 })
+        </div>
+
+        <div class="col-12">
+            <button type="submit" class="btn btn-success">
+                <i class="fas fa-save me-1"></i> Lưu
+            </button>
+            <a href="@Url.Action("Index")" class="btn btn-secondary ms-2">
+                <i class="fas fa-arrow-left me-1"></i> Quay lại
+            </a>
+        </div>
+    </div>
+}

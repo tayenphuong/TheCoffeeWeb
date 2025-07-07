@@ -1,0 +1,85 @@
+﻿@model TheCoffee.Models.User
+@{
+    ViewBag.Title = "Chi tiết người dùng";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container my-4">
+    <h2>Thông tin người dùng: @Model.FullName</h2>
+
+    <table class="table table-bordered mt-3">
+        <tr>
+            <th>Tài khoản</th>
+            <td>@Model.UserName</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>@Model.Email</td>
+        </tr>
+        <tr>
+            <th>SĐT</th>
+            <td>@Model.Phone</td>
+        </tr>
+        <tr>
+            <th>Vai trò</th>
+            <td>@Model.Role.RoleName</td>
+        </tr>
+    </table>
+
+    <!-- ĐƠN HÀNG CỦA NGƯỜI DÙNG -->
+    <h4 class="mt-4">Đơn hàng đã đặt</h4>
+
+    @if (Model.Orders != null && Model.Orders.Any())
+    {
+        <table class="table table-bordered table-hover mt-2">
+            <thead class="table-light">
+                <tr>
+                    <th>#ID</th>
+                    <th>Địa chỉ</th>
+                    <th>Trạng thái</th>
+                    <th>Ngày thanh toán</th>
+                    <th>Số tiền</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var order in Model.Orders.OrderByDescending(o => o.OrderID))
+                {
+                    var payment = order.Payments.FirstOrDefault();
+                    <tr>
+                        <td>@order.OrderID</td>
+                        <td>@order.Address</td>
+                        <td>
+                            @switch (order.OrderStatus)
+                            {
+                                case 1:
+                                    @:<span class="badge bg-warning text-dark">Chờ xác nhận</span>
+                                    break;
+                                case 2:
+                                    @:<span class="badge bg-success">Đã xác nhận</span>
+                                    break;
+                                case 3:
+                                    @:<span class="badge bg-primary">Đã giao</span>
+                                    break;
+                                case 4:
+                                    @:<span class="badge bg-danger">Đã hủy</span>
+                                    break;
+                            }
+                        </td>
+                        <td>@(payment?.PaidAt?.ToString("dd/MM/yyyy HH:mm") ?? "Chưa có")</td>
+                        <td>@(payment.PaidAmount?.ToString("N0") ?? "0") đ</td>
+                        <td>
+                            @Html.ActionLink("Chi tiết", "Details", "AdminOrder", new { id = order.OrderID, area = "Admin" }, new { @class = "btn btn-sm btn-info" })
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p class="text-muted">Người dùng chưa đặt đơn hàng nào.</p>
+    }
+
+    <a href="@Url.Action("Index")" class="btn btn-secondary mt-3">Quay lại</a>
+</div>

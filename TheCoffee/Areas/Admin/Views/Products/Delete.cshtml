@@ -1,0 +1,28 @@
+﻿@model TheCoffee.Models.Product
+
+@{
+    ViewBag.Title = "Xóa sản phẩm";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2 class="mb-4 text-danger">Xác nhận xóa sản phẩm</h2>
+
+<div class="card border-danger p-4 mb-3">
+    <dl class="row">
+        <dt class="col-sm-4">Tên sản phẩm</dt>
+        <dd class="col-sm-8">@Model.ProductName</dd>
+
+        <dt class="col-sm-4">Giá</dt>
+        <dd class="col-sm-8">@String.Format("{0:N0} đ", Model.Price)</dd>
+
+        <dt class="col-sm-4">Danh mục</dt>
+        <dd class="col-sm-8">@Model.Category?.CategoryName</dd>
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        <input type="submit" value="Xóa" class="btn btn-danger" />
+        @Html.ActionLink("Hủy", "Index", null, new { @class = "btn btn-secondary ms-2" })
+    }
+</div>

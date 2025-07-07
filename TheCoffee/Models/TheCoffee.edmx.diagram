@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="89c254bc2c89485c85efc572454e252f" Name="Diagram1" ZoomLevel="62">
+        <EntityTypeShape EntityType="TheCoffeeWebModel.CartItem" Width="1.5" PointX="7.5" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TheCoffeeWebModel.Cart" Width="1.5" PointX="5.25" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TheCoffeeWebModel.Category" Width="1.5" PointX="3" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TheCoffeeWebModel.OrderDetail" Width="1.5" PointX="12.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TheCoffeeWebModel.Order" Width="1.5" PointX="10.5" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TheCoffeeWebModel.OrderType" Width="1.5" PointX="8.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TheCoffeeWebModel.PaymentMethod" Width="1.5" PointX="10.5" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TheCoffeeWebModel.Payment" Width="1.5" PointX="12.75" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TheCoffeeWebModel.Product" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TheCoffeeWebModel.ProductStatus" Width="1.5" PointX="3" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TheCoffeeWebModel.Rating" Width="1.5" PointX="12.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TheCoffeeWebModel.Role" Width="1.5" PointX="0.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TheCoffeeWebModel.User" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
+        <AssociationConnector Association="TheCoffeeWebModel.FK__CartItems__CartI__59063A47" ManuallyRouted="false" />
+        <AssociationConnector Association="TheCoffeeWebModel.FK__CartItems__Produ__59FA5E80" ManuallyRouted="false" />
+        <AssociationConnector Association="TheCoffeeWebModel.FK__Carts__UserID__5629CD9C" ManuallyRouted="false" />
+        <AssociationConnector Association="TheCoffeeWebModel.FK__Orders__CartID__628FA481" ManuallyRouted="false" />
+        <AssociationConnector Association="TheCoffeeWebModel.FK__Products__Catego__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="TheCoffeeWebModel.FK__OrderDeta__Order__6A30C649" ManuallyRouted="false" />
+        <AssociationConnector Association="TheCoffeeWebModel.FK__OrderDeta__Produ__693CA210" ManuallyRouted="false" />
+        <AssociationConnector Association="TheCoffeeWebModel.FK__Orders__OrderTyp__60A75C0F" ManuallyRouted="false" />
+        <AssociationConnector Association="TheCoffeeWebModel.FK__Orders__UserID__619B8048" ManuallyRouted="false" />
+        <AssociationConnector Association="TheCoffeeWebModel.FK__Payments__OrderI__66603565" ManuallyRouted="false" />
+        <AssociationConnector Association="TheCoffeeWebModel.FK__Ratings__OrderID__6EF57B66" ManuallyRouted="false" />
+        <AssociationConnector Association="TheCoffeeWebModel.FK__Payments__Method__656C112C" ManuallyRouted="false" />
+        <AssociationConnector Association="TheCoffeeWebModel.FK__Products__Status__52593CB8" ManuallyRouted="false" />
+        <AssociationConnector Association="TheCoffeeWebModel.FK__Ratings__Product__6E01572D" ManuallyRouted="false" />
+        <AssociationConnector Association="TheCoffeeWebModel.FK__Users__RoleID__4BAC3F29" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,75 @@
+﻿@model TheCoffee.Models.ViewModel.CheckoutViewModel
+@{
+    ViewBag.Title = "Thanh toán đơn hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container my-5">
+    <h2 class="mb-4 text-center">Thông tin thanh toán</h2>
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">@TempData["Error"]</div>
+    }
+
+    @using (Html.BeginForm("Checkout", "Cart", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group mb-3">
+                    <label for="Address">Địa chỉ giao hàng</label>
+                    @Html.TextBoxFor(m => m.Address, new { @class = "form-control", placeholder = "Nhập địa chỉ giao hàng" })
+                    @Html.ValidationMessageFor(m => m.Address, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="OrderNote">Ghi chú đơn hàng</label>
+                    @Html.TextAreaFor(m => m.OrderNote, 3, 40, new { @class = "form-control", placeholder = "Ghi chú thêm (nếu có)" })
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <h4 class="mb-3">Tóm tắt đơn hàng</h4>
+                @if (Model.CartItems != null && Model.CartItems.Any())
+                {
+                    <ul class="list-group mb-3">
+                        @foreach (var item in Model.CartItems)
+                        {
+                            <li class="list-group-item d-flex justify-content-between lh-sm">
+                                <div>
+                                    <h6 class="my-0">@item.ProductName (@item.Quantity)</h6>
+                                </div>
+                                <span class="text-muted">@((item.Price * item.Quantity).ToString("N0")) đ</span>
+                            </li>
+                        }
+                        <li class="list-group-item d-flex justify-content-between">
+                            <strong>Tổng cộng</strong>
+                            <strong class="text-danger">@Model.Total.ToString("N0") đ</strong>
+                        </li>
+                    </ul>
+                }
+                else
+                {
+                    <p class="text-muted">Không có sản phẩm trong giỏ hàng.</p>
+                }
+
+                <button type="submit" class="btn btn-success btn-lg btn-block w-100 mt-3">
+                    <i class="fas fa-check-circle me-1"></i> Đặt hàng
+                </button>
+            </div>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    @if (TempData["Success"] != null)
+     {
+        <script>
+            alert("@Html.Raw(TempData["Success"])");
+            window.location.href = '@Url.Action("HomePage", "Home")';
+        </script>
+     }
+    @Scripts.Render("~/bundles/jqueryval")
+}

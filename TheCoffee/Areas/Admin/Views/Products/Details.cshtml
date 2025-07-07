@@ -1,0 +1,46 @@
+﻿@model TheCoffee.Models.Product
+
+@{
+    ViewBag.Title = "Chi tiết sản phẩm";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2 class="mb-4">Chi tiết sản phẩm</h2>
+
+<div class="card shadow-sm p-4">
+    <div class="row">
+        <div class="col-md-4 text-center">
+            @if (!string.IsNullOrEmpty(Model.Img))
+            {
+                <img src="@Url.Content(Model.Img)" class="img-fluid img-thumbnail" />
+            }
+            else
+            {
+                <span class="text-muted">Không có hình ảnh</span>
+            }
+        </div>
+        <div class="col-md-8">
+            <dl class="row">
+                <dt class="col-sm-4">Tên sản phẩm</dt>
+                <dd class="col-sm-8">@Model.ProductName</dd>
+
+                <dt class="col-sm-4">Giá</dt>
+                <dd class="col-sm-8">@String.Format("{0:N0} đ", Model.Price)</dd>
+
+                <dt class="col-sm-4">Mô tả</dt>
+                <dd class="col-sm-8">@Model.Description</dd>
+
+                <dt class="col-sm-4">Danh mục</dt>
+                <dd class="col-sm-8">@Model.Category?.CategoryName</dd>
+
+                <dt class="col-sm-4">Trạng thái</dt>
+                <dd class="col-sm-8">@Model.ProductStatus?.StatusName</dd>
+            </dl>
+
+            <div>
+                @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.ProductID }, new { @class = "btn btn-primary" })
+                @Html.ActionLink("Quay lại", "Index", null, new { @class = "btn btn-secondary ms-2" })
+            </div>
+        </div>
+    </div>
+</div>

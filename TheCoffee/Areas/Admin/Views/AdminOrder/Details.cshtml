@@ -1,0 +1,107 @@
+﻿@model TheCoffee.Models.Order
+@{
+    ViewBag.Title = "Chi tiết đơn hàng";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container my-5">
+    <h2 class="text-center mb-4">Chi tiết đơn hàng #@Model.OrderID</h2>
+
+    <div class="row gy-4">
+        <!-- Thông tin đơn hàng -->
+        <div class="col-md-6">
+            <div class="card border-primary">
+                <div class="card-header bg-primary text-white">Thông tin đơn hàng</div>
+                <div class="card-body p-3">
+                    <p><strong>Mã đơn:</strong> @Model.OrderID</p>
+                    <p>
+                        <strong>Trạng thái:</strong>
+                        @switch (Model.OrderStatus)
+                        {
+                            case 1:
+                                @:<span class="badge bg-warning text-dark">Chờ xác nhận</span>
+                                break;
+                            case 2:
+                                @:<span class="badge bg-success">Đã xác nhận</span>
+                                break;
+                            case 3:
+                                @:<span class="badge bg-primary">Đã giao</span>
+                                break;
+                            case 4:
+                                @:<span class="badge bg-danger">Đã hủy</span>
+                                break;
+                        }
+                    </p>
+                    <p><strong>Hình thức:</strong> @Model.OrderType.OrderTypeName</p>
+                    <p><strong>Ghi chú:</strong> @(Model.OrderNote ?? "Không có")</p>
+                    <p><strong>Địa chỉ:</strong> @Model.Address</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Thông tin khách hàng -->
+        <div class="col-md-6">
+            <div class="card border-secondary">
+                <div class="card-header bg-secondary text-white">Thông tin khách hàng</div>
+                <div class="card-body p-3">
+                    <p><strong>Họ tên:</strong> @Model.User.FullName</p>
+                    <p><strong>Email:</strong> @Model.User.Email</p>
+                    <p><strong>Điện thoại:</strong> @Model.User.Phone</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Danh sách sản phẩm -->
+        <div class="col-12">
+            <div class="card border-info">
+                <div class="card-header bg-info text-white">Danh sách sản phẩm</div>
+                <div class="card-body p-0">
+                    <table class="table table-bordered table-hover mb-0">
+                        <thead class="table-light text-center">
+                            <tr>
+                                <th>Tên sản phẩm</th>
+                                <th>Giá</th>
+                                <th>Số lượng</th>
+                                <th>Thành tiền</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.OrderDetails)
+                            {
+                                <tr>
+                                    <td>@item.Product.ProductName</td>
+                                    <td class="text-end">@item.Product.Price.ToString("N0") đ</td>
+                                    <td class="text-center">@item.OrderQuantity</td>
+                                    <td class="text-end">@((item.OrderQuantity * item.Product.Price).ToString("N0")) đ</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Thông tin thanh toán -->
+        @if (Model.Payments != null && Model.Payments.Any())
+        {
+            var payment = Model.Payments.First();
+            <div class="col-12">
+                <div class="card border-success">
+                    <div class="card-header bg-success text-white">Thông tin thanh toán</div>
+                    <div class="card-body p-3">
+                        <p><strong>Phương thức:</strong> @payment.PaymentMethod.MethodName</p>
+                        <p><strong>Trạng thái:</strong> @payment.PaymentStatus</p>
+                        <p><strong>Số tiền:</strong> @(payment.PaidAmount?.ToString("N0") ?? "0") đ</p>
+                    </div>
+                </div>
+            </div>
+        }
+
+        <!-- Quay lại -->
+        <div class="col-12 text-end mt-3">
+            <a href="@Url.Action("Index")" class="btn btn-outline-secondary">
+                <i class="fas fa-arrow-left me-1"></i> Quay lại danh sách
+            </a>
+        </div>
+    </div>
+</div>

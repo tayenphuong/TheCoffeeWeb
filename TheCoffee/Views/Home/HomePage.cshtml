@@ -1,0 +1,41 @@
+﻿@model List<TheCoffee.Models.Product>
+@{
+    ViewBag.Title = "HomePage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="horizontal-scroll-container d-flex overflow-auto gap-3 py-3">
+    @foreach (var item in Model)
+    {
+        <div class="card product-card shadow-sm" style="min-width: 250px;">
+            <div class="position-relative">
+                <img src="@item.Img" class="card-img-top" alt="@item.ProductName" style="height: 200px; object-fit: cover;">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">@item.ProductName</h5>
+                <p class="card-text text-muted small">@item.Description</p>
+                <div class="d-flex justify-content-between align-items-center">
+                <span class="h6 text-warning mb-0">@item.Price.ToString("N0")đ</span>
+                <button class="btn btn-warning btn-sm" onclick="addToCart(@item.ProductID)">
+                    <i class="fa-solid fa-cart-plus"></i> Thêm
+                </button>
+            </div>
+                
+            </div>
+        </div>
+    }
+</div>
+<style>
+    .horizontal-scroll-container {
+    scroll-snap-type: x mandatory;
+}
+
+.horizontal-scroll-container > .card {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+}
+
+</style>
+

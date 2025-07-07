@@ -1,0 +1,39 @@
+﻿@model List<TheCoffee.Models.User>
+@{
+    ViewBag.Title = "Quản lý người dùng";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container ">
+    <h2 class="text-center mb-4">Danh sách người dùng</h2>
+
+    <table class="table table-bordered table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Tài khoản</th>
+                <th>Họ tên</th>
+                <th>Email</th>
+                <th>Vai trò</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.UserID</td>
+                    <td>@user.UserName</td>
+                    <td>@user.FullName</td>
+                    <td>@user.Email</td>
+                    <td>@user.Role.RoleName</td>
+                    <td class="text-nowrap">
+                        @Html.ActionLink("Chi tiết", "Details", new { id = user.UserID }, new { @class = "btn btn-sm btn-info me-1" })
+                        @Html.ActionLink("Sửa", "Edit", new { id = user.UserID }, new { @class = "btn btn-sm btn-warning me-1" })
+                        @Html.ActionLink("Xoá", "Delete", new { id = user.UserID }, new { @class = "btn btn-sm btn-danger", onclick = "return confirm('Xoá người dùng này?');" })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
