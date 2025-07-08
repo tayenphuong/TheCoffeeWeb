@@ -31,6 +31,7 @@
     <Property Name="OrderQuantity" Type="int" Nullable="false" />
     <Property Name="ProductID" Type="int" Nullable="false" />
     <Property Name="OrderID" Type="int" Nullable="false" />
+    <Property Name="UnitPrice" Type="decimal" Precision="10" Scale="2" Nullable="false" />
   </EntityType>
   <EntityType Name="Orders">
     <Key>

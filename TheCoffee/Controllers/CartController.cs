@@ -96,6 +96,7 @@ namespace TheCoffee.Controllers
                         {
                             ProductID = product.ProductID,
                             ProductName = product.ProductName,
+
                             Price = product.Price,
                             Img = product.Img,
                             Quantity = 1
@@ -373,6 +374,7 @@ namespace TheCoffee.Controllers
                 {
                     OrderID = order.OrderID,
                     ProductID = item.ProductID,
+                    UnitPrice = item.Product.Price,
                     OrderQuantity = item.CartQuantity
                 });
             }

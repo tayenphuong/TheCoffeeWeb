@@ -36,6 +36,7 @@
           <Property Name="OrderQuantity" Type="int" Nullable="false" />
           <Property Name="ProductID" Type="int" Nullable="false" />
           <Property Name="OrderID" Type="int" Nullable="false" />
+          <Property Name="UnitPrice" Type="decimal" Precision="10" Scale="2" Nullable="false" />
         </EntityType>
         <EntityType Name="Orders">
           <Key>
@@ -421,6 +422,7 @@
           <Property Name="OrderID" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Order" Relationship="Self.FK__OrderDeta__Order__6A30C649" FromRole="OrderDetail" ToRole="Orders" />
           <NavigationProperty Name="Product" Relationship="Self.FK__OrderDeta__Produ__693CA210" FromRole="OrderDetail" ToRole="Products" />
+          <Property Name="UnitPrice" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
         </EntityType>
         <EntityType Name="Order">
           <Key>
@@ -819,6 +821,7 @@
           <EntitySetMapping Name="OrderDetails">
             <EntityTypeMapping TypeName="TheCoffeeWebModel.OrderDetail">
               <MappingFragment StoreEntitySet="OrderDetail">
+                <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
                 <ScalarProperty Name="OrderQuantity" ColumnName="OrderQuantity" />
                 <ScalarProperty Name="ProductID" ColumnName="ProductID" />
                 <ScalarProperty Name="OrderID" ColumnName="OrderID" />

@@ -31,7 +31,7 @@ namespace TheCoffee.Areas.Admin.Controllers
             //                      .Include(o => o.Payments)
             //                      .FirstOrDefault(o => o.OrderID == id);
             var order = db.Orders
-              .Include(o => o.OrderType) // ✅ thêm dòng này
+              .Include(o => o.OrderType) 
               .Include(o => o.User)
               .Include(o => o.OrderDetails.Select(od => od.Product))
               .Include(o => o.Payments.Select(p => p.PaymentMethod)) // cũng nên include

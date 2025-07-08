@@ -29,6 +29,7 @@
     <EntitySetMapping Name="OrderDetails">
       <EntityTypeMapping TypeName="TheCoffeeWebModel.OrderDetail">
         <MappingFragment StoreEntitySet="OrderDetail">
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
           <ScalarProperty Name="OrderQuantity" ColumnName="OrderQuantity" />
           <ScalarProperty Name="ProductID" ColumnName="ProductID" />
           <ScalarProperty Name="OrderID" ColumnName="OrderID" />

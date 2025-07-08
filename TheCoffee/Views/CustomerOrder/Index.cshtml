@@ -1,0 +1,68 @@
+﻿@model IEnumerable<TheCoffee.Models.ViewModel.CustomerOrderVM>
+
+@{
+    ViewBag.Title = "Đơn hàng của tôi";
+}
+
+<h2 class="mb-4">Đơn hàng của tôi</h2>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">Bạn chưa có đơn hàng nào.</div>
+}
+else
+{
+    <table class="table table-bordered table-hover">
+        <thead class="table-warning text-center">
+            <tr>
+                <th>Mã đơn</th>
+                <th>Loại đơn</th>
+                <th>Tổng tiền</th> 
+                <th>Trạng thái</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+             {
+               
+                var order = item.Order;
+               
+                <tr>
+                    <td class="text-center">#@order.OrderID</td>
+                    <td>@order.OrderType.OrderTypeName</td>
+                    <td>// chua load duoc</td>
+                    
+                    <td>
+                        @{
+                            string status = "";
+                            switch (order.OrderStatus)
+                            {
+                                case 1: status = "Chờ xác nhận"; break;
+                                case 2: status = "Đã xác nhận"; break;
+                                case 3: status = "Đã hoàn thành"; break;
+                                case 4: status = "Đã hủy"; break;
+                                default: status = "Không rõ"; break;
+                            }
+                        }
+                        <span class="badge bg-secondary">@status</span>
+                    </td>
+                    <td>
+                        <a href="@Url.Action("Details", "CustomerOrder", new { id = order.OrderID })" class="btn btn-sm btn-outline-primary">
+                            <i class="fas fa-eye"></i> Xem
+                        </a>
+
+                        @if (item.HasUnrated)
+                         {
+                            <span class="btn btn-sm btn-outline-success ms-2">
+                                <i class="fas fa-star"></i>
+                            </span>
+                            
+                         }
+                    </td>
+
+                </tr>
+             }
+        </tbody>
+    </table>
+}
