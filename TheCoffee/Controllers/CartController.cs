@@ -89,7 +89,7 @@ namespace TheCoffee.Controllers
                 }
                 else
                 {
-                    var product = db.Products.Find(productId); // ✅ lấy thông tin từ DB
+                    var product = db.Products.Find(productId); 
                     if (product != null)
                     {
                         cart.Add(new CartItemViewModel
