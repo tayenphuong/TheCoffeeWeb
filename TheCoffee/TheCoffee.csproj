@@ -200,6 +200,7 @@
     <Compile Include="Models\ViewModel\CartItemViewModel.cs" />
     <Compile Include="Models\ViewModel\CheckoutViewModel.cs" />
     <Compile Include="Models\ViewModel\CustomerOrderVM.cs" />
+    <Compile Include="Models\ViewModel\OrderCreateVM.cs" />
     <Compile Include="Models\ViewModel\OrderViewModel.cs" />
     <Compile Include="Models\ViewModel\ProductViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -276,6 +277,7 @@
     <Content Include="Areas\Admin\Views\AdminUser\Details.cshtml" />
     <Content Include="Areas\Admin\Views\AdminUser\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\AdminUser\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminOrder\Create.cshtml" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -309,6 +311,9 @@
     <Content Include="Views\Cart\Checkout.cshtml" />
     <Content Include="Views\CustomerOrder\Index.cshtml" />
     <Content Include="Views\CustomerOrder\Details.cshtml" />
+    <Content Include="Views\Home\ViewPage1.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Detail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

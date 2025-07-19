@@ -3,8 +3,112 @@
   "WorkspaceRootPath": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\areas\\admin\\views\\adminorder\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\areas\\admin\\views\\adminorder\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\areas\\admin\\views\\adminorder\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\areas\\admin\\views\\adminorder\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\areas\\admin\\controllers\\adminordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\areas\\admin\\controllers\\adminordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\models\\viewmodel\\ordercreatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\models\\viewmodel\\ordercreatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\areas\\admin\\views\\adminhome\\adminhome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\areas\\admin\\views\\adminhome\\adminhome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\views\\customerorder\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\views\\customerorder\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\views\\customerorder\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\views\\customerorder\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\views\\home\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\views\\home\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\views\\home\\cushome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\views\\home\\cushome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\views\\home\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\views\\home\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\areas\\admin\\controllers\\adminhomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\areas\\admin\\controllers\\adminhomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\models\\thecoffee.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\models\\thecoffee.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\content\\myjs\\admin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\content\\myjs\\admin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\areas\\admin\\views\\adminorder\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\areas\\admin\\views\\adminorder\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\models\\viewmodel\\orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\models\\viewmodel\\orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\views\\home\\viewpage1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\views\\home\\viewpage1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\helpers\\cartsessionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,68 +119,20 @@
       "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\models\\viewmodel\\cartitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\models\\viewmodel\\checkoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\models\\viewmodel\\checkoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|d:\\huflit\\cnpm _ coffee web\\thecoffeeweb\\thecoffee\\areas\\admin\\views\\adminorder\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\areas\\admin\\views\\adminorder\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\areas\\admin\\views\\adminhome\\adminhome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\areas\\admin\\views\\adminhome\\adminhome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\models\\thecoffee.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
-      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\models\\thecoffee.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\areas\\admin\\controllers\\adminordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\areas\\admin\\controllers\\adminordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\controllers\\customerordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\controllers\\customerordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\areas\\admin\\views\\adminorder\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\areas\\admin\\views\\adminorder\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\models\\thecoffee.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\models\\thecoffee.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\views\\customerorder\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\views\\customerorder\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\views\\customerorder\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\views\\customerorder\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\areas\\admin\\views\\categories\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -85,18 +141,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\models\\viewmodel\\customerordervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\models\\viewmodel\\customerordervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\models\\viewmodel\\orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\models\\viewmodel\\orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\views\\home\\cushome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\views\\home\\cushome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\models\\rating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -109,14 +153,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\models\\viewmodel\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\models\\viewmodel\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\views\\home\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\views\\home\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\areas\\admin\\views\\adminuser\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -139,10 +175,6 @@
       "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\areas\\admin\\adminusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\areas\\admin\\controllers\\adminhomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\areas\\admin\\controllers\\adminhomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\areas\\admin\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\areas\\admin\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -155,16 +187,8 @@
       "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\areas\\admin\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\areas\\admin\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\areas\\admin\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\views\\cart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -189,10 +213,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\content\\mycss\\admin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\content\\mycss\\admin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\content\\myjs\\admin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|solutionrelative:thecoffee\\content\\myjs\\admin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8192619D-65B7-4E54-93FA-82374924D4CE}|TheCoffee\\TheCoffee.csproj|D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\thecoffee\\content\\myjs\\customer.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -230,7 +250,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 316,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -238,192 +258,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CustomerOrderController.cs",
-              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Controllers\\CustomerOrderController.cs",
-              "RelativeDocumentMoniker": "TheCoffee\\Controllers\\CustomerOrderController.cs",
-              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Controllers\\CustomerOrderController.cs",
-              "RelativeToolTip": "TheCoffee\\Controllers\\CustomerOrderController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAArwBIAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T01:52:38.027Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CartController.cs",
-              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Controllers\\CartController.cs",
-              "RelativeDocumentMoniker": "TheCoffee\\Controllers\\CartController.cs",
-              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Controllers\\CartController.cs",
-              "RelativeToolTip": "TheCoffee\\Controllers\\CartController.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAAAFsAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T03:54:52.853Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Product.cs",
-              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "TheCoffee\\Models\\Product.cs",
-              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\Product.cs",
-              "RelativeToolTip": "TheCoffee\\Models\\Product.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T17:43:00.354Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AdminHome.cshtml",
-              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Views\\AdminHome\\AdminHome.cshtml",
-              "RelativeDocumentMoniker": "TheCoffee\\Areas\\Admin\\Views\\AdminHome\\AdminHome.cshtml",
-              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Views\\AdminHome\\AdminHome.cshtml",
-              "RelativeToolTip": "TheCoffee\\Areas\\Admin\\Views\\AdminHome\\AdminHome.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAGAAAAAAAAAA==",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Views\\AdminOrder\\Create.cshtml",
+              "RelativeDocumentMoniker": "TheCoffee\\Areas\\Admin\\Views\\AdminOrder\\Create.cshtml",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Views\\AdminOrder\\Create.cshtml*",
+              "RelativeToolTip": "TheCoffee\\Areas\\Admin\\Views\\AdminOrder\\Create.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-06T05:36:55.597Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "TheCoffee\\Views\\Account\\Login.cshtml",
-              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "TheCoffee\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAABgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-06T15:31:21.093Z",
+              "WhenOpened": "2025-07-14T01:41:44.457Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CheckoutViewModel.cs",
-              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\ViewModel\\CheckoutViewModel.cs",
-              "RelativeDocumentMoniker": "TheCoffee\\Models\\ViewModel\\CheckoutViewModel.cs",
-              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\ViewModel\\CheckoutViewModel.cs",
-              "RelativeToolTip": "TheCoffee\\Models\\ViewModel\\CheckoutViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAMwAYAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T03:00:26.881Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TheCoffee.edmx [Diagram1]",
-              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\TheCoffee.edmx",
-              "RelativeDocumentMoniker": "TheCoffee\\Models\\TheCoffee.edmx",
-              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\TheCoffee.edmx [Diagram1]",
-              "RelativeToolTip": "TheCoffee\\Models\\TheCoffee.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2025-07-06T15:30:25.827Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CartItemViewModel.cs",
-              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\ViewModel\\CartItemViewModel.cs",
-              "RelativeDocumentMoniker": "TheCoffee\\Models\\ViewModel\\CartItemViewModel.cs",
-              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\ViewModel\\CartItemViewModel.cs",
-              "RelativeToolTip": "TheCoffee\\Models\\ViewModel\\CartItemViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T03:30:40.781Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CartSessionHelper.cs",
-              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Helpers\\CartSessionHelper.cs",
-              "RelativeDocumentMoniker": "TheCoffee\\Helpers\\CartSessionHelper.cs",
-              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Helpers\\CartSessionHelper.cs",
-              "RelativeToolTip": "TheCoffee\\Helpers\\CartSessionHelper.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T03:46:31.262Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Views\\AdminOrder\\Details.cshtml",
-              "RelativeDocumentMoniker": "TheCoffee\\Areas\\Admin\\Views\\AdminOrder\\Details.cshtml",
-              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Views\\AdminOrder\\Details.cshtml",
-              "RelativeToolTip": "TheCoffee\\Areas\\Admin\\Views\\AdminOrder\\Details.cshtml",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAAAEAAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-07T08:26:49.817Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "OrderDetail.cs",
-              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\OrderDetail.cs",
-              "RelativeDocumentMoniker": "TheCoffee\\Models\\OrderDetail.cs",
-              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\OrderDetail.cs",
-              "RelativeToolTip": "TheCoffee\\Models\\OrderDetail.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T10:36:12.225Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "AdminOrderController.cs",
               "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Controllers\\AdminOrderController.cs",
               "RelativeDocumentMoniker": "TheCoffee\\Areas\\Admin\\Controllers\\AdminOrderController.cs",
               "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Controllers\\AdminOrderController.cs",
               "RelativeToolTip": "TheCoffee\\Areas\\Admin\\Controllers\\AdminOrderController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAJcAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T06:17:27.922Z"
+              "WhenOpened": "2025-07-07T06:17:27.922Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 3,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "TheCoffee\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "TheCoffee\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAA0AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-06T05:20:56.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Views\\AdminOrder\\Index.cshtml",
               "RelativeDocumentMoniker": "TheCoffee\\Areas\\Admin\\Views\\AdminOrder\\Index.cshtml",
               "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Views\\AdminOrder\\Index.cshtml",
               "RelativeToolTip": "TheCoffee\\Areas\\Admin\\Views\\AdminOrder\\Index.cshtml",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAswEIAAABFAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-07T06:32:26.856Z"
+              "WhenOpened": "2025-07-07T06:32:26.856Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "TheCoffee.Designer.cs",
-              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\TheCoffee.Designer.cs",
-              "RelativeDocumentMoniker": "TheCoffee\\Models\\TheCoffee.Designer.cs",
-              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\TheCoffee.Designer.cs",
-              "RelativeToolTip": "TheCoffee\\Models\\TheCoffee.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "OrderCreateVM.cs",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\ViewModel\\OrderCreateVM.cs",
+              "RelativeDocumentMoniker": "TheCoffee\\Models\\ViewModel\\OrderCreateVM.cs",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\ViewModel\\OrderCreateVM.cs",
+              "RelativeToolTip": "TheCoffee\\Models\\ViewModel\\OrderCreateVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T04:22:11.722Z"
+              "WhenOpened": "2025-07-12T18:32:32.4Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "OrderViewModel.cs",
-              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\ViewModel\\OrderViewModel.cs",
-              "RelativeDocumentMoniker": "TheCoffee\\Models\\ViewModel\\OrderViewModel.cs",
-              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\ViewModel\\OrderViewModel.cs",
-              "RelativeToolTip": "TheCoffee\\Models\\ViewModel\\OrderViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T15:38:10.262Z"
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "TheCoffee\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "TheCoffee\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADcAAACZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-06T02:36:48.821Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 12,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\CustomerOrder\\Details.cshtml",
               "RelativeDocumentMoniker": "TheCoffee\\Views\\CustomerOrder\\Details.cshtml",
@@ -435,127 +348,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "TheCoffee\\Views\\Account\\Register.cshtml",
-              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "TheCoffee\\Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-08T03:06:27.838Z"
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "TheCoffee\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "TheCoffee\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAEcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T18:26:07.398Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\CustomerOrder\\Index.cshtml",
-              "RelativeDocumentMoniker": "TheCoffee\\Views\\CustomerOrder\\Index.cshtml",
-              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\CustomerOrder\\Index.cshtml",
-              "RelativeToolTip": "TheCoffee\\Views\\CustomerOrder\\Index.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "AdminHome.cshtml",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Views\\AdminHome\\AdminHome.cshtml",
+              "RelativeDocumentMoniker": "TheCoffee\\Areas\\Admin\\Views\\AdminHome\\AdminHome.cshtml",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Views\\AdminHome\\AdminHome.cshtml",
+              "RelativeToolTip": "TheCoffee\\Areas\\Admin\\Views\\AdminHome\\AdminHome.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-08T03:25:59.637Z"
+              "WhenOpened": "2025-07-15T07:00:40.343Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 9,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "TheCoffee\\Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "TheCoffee\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-06T15:31:21.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "AccountController.cs",
               "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "TheCoffee\\Controllers\\AccountController.cs",
               "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Controllers\\AccountController.cs",
               "RelativeToolTip": "TheCoffee\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAFIAAABcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAABcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-06T03:54:10.223Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "CusHome.cshtml",
-              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\Home\\CusHome.cshtml",
-              "RelativeDocumentMoniker": "TheCoffee\\Views\\Home\\CusHome.cshtml",
-              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\Home\\CusHome.cshtml",
-              "RelativeToolTip": "TheCoffee\\Views\\Home\\CusHome.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-06T05:42:48.894Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Views\\Categories\\Details.cshtml",
-              "RelativeDocumentMoniker": "TheCoffee\\Areas\\Admin\\Views\\Categories\\Details.cshtml",
-              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Views\\Categories\\Details.cshtml",
-              "RelativeToolTip": "TheCoffee\\Areas\\Admin\\Views\\Categories\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-07T01:20:28.863Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "TheCoffee\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "TheCoffee\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-06T02:36:48.821Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "CustomerOrderVM.cs",
-              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\ViewModel\\CustomerOrderVM.cs",
-              "RelativeDocumentMoniker": "TheCoffee\\Models\\ViewModel\\CustomerOrderVM.cs",
-              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\ViewModel\\CustomerOrderVM.cs",
-              "RelativeToolTip": "TheCoffee\\Models\\ViewModel\\CustomerOrderVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T18:02:34.36Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Rating.cs",
-              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\Rating.cs",
-              "RelativeDocumentMoniker": "TheCoffee\\Models\\Rating.cs",
-              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\Rating.cs",
-              "RelativeToolTip": "TheCoffee\\Models\\Rating.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T17:42:54.957Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Role.cs",
-              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\Role.cs",
-              "RelativeDocumentMoniker": "TheCoffee\\Models\\Role.cs",
-              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\Role.cs",
-              "RelativeToolTip": "TheCoffee\\Models\\Role.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T17:43:19.27Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Order.cs",
-              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\Order.cs",
-              "RelativeDocumentMoniker": "TheCoffee\\Models\\Order.cs",
-              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\Order.cs",
-              "RelativeToolTip": "TheCoffee\\Models\\Order.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T10:32:17.517Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 16,
               "Title": "HomePage.cshtml",
               "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\Home\\HomePage.cshtml",
               "RelativeDocumentMoniker": "TheCoffee\\Views\\Home\\HomePage.cshtml",
@@ -567,7 +410,306 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\Home\\Detail.cshtml",
+              "RelativeDocumentMoniker": "TheCoffee\\Views\\Home\\Detail.cshtml",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\Home\\Detail.cshtml",
+              "RelativeToolTip": "TheCoffee\\Views\\Home\\Detail.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAIwA4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-15T02:33:56.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\CustomerOrder\\Index.cshtml",
+              "RelativeDocumentMoniker": "TheCoffee\\Views\\CustomerOrder\\Index.cshtml",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\CustomerOrder\\Index.cshtml",
+              "RelativeToolTip": "TheCoffee\\Views\\CustomerOrder\\Index.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABMAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-08T03:25:59.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TheCoffee.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\TheCoffee.edmx",
+              "RelativeDocumentMoniker": "TheCoffee\\Models\\TheCoffee.edmx",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\TheCoffee.edmx [Diagram1]",
+              "RelativeToolTip": "TheCoffee\\Models\\TheCoffee.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2025-07-06T15:30:25.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "TheCoffee\\Models\\Order.cs",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\Order.cs",
+              "RelativeToolTip": "TheCoffee\\Models\\Order.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACcAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T10:32:17.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CusHome.cshtml",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\Home\\CusHome.cshtml",
+              "RelativeDocumentMoniker": "TheCoffee\\Views\\Home\\CusHome.cshtml",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\Home\\CusHome.cshtml",
+              "RelativeToolTip": "TheCoffee\\Views\\Home\\CusHome.cshtml",
+              "ViewState": "AgIAAIsBAAAAAAAAAAAYwJEBAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-06T05:42:48.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Views\\AdminOrder\\Details.cshtml",
+              "RelativeDocumentMoniker": "TheCoffee\\Areas\\Admin\\Views\\AdminOrder\\Details.cshtml",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Views\\AdminOrder\\Details.cshtml",
+              "RelativeToolTip": "TheCoffee\\Areas\\Admin\\Views\\AdminOrder\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-07T08:26:49.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "TheCoffee\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "TheCoffee\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-14T19:15:02.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "admin.js",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Content\\myjs\\admin.js",
+              "RelativeDocumentMoniker": "TheCoffee\\Content\\myjs\\admin.js",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Content\\myjs\\admin.js",
+              "RelativeToolTip": "TheCoffee\\Content\\myjs\\admin.js",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAiwIQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-07T00:40:08.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AdminHomeController.cs",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Controllers\\AdminHomeController.cs",
+              "RelativeDocumentMoniker": "TheCoffee\\Areas\\Admin\\Controllers\\AdminHomeController.cs",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Controllers\\AdminHomeController.cs",
+              "RelativeToolTip": "TheCoffee\\Areas\\Admin\\Controllers\\AdminHomeController.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAowE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T00:41:43.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "TheCoffee\\Models\\Payment.cs",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\Payment.cs",
+              "RelativeToolTip": "TheCoffee\\Models\\Payment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T15:15:55.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "TheCoffee\\Models\\OrderDetail.cs",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\OrderDetail.cs",
+              "RelativeToolTip": "TheCoffee\\Models\\OrderDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T10:36:12.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "OrderViewModel.cs",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\ViewModel\\OrderViewModel.cs",
+              "RelativeDocumentMoniker": "TheCoffee\\Models\\ViewModel\\OrderViewModel.cs",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\ViewModel\\OrderViewModel.cs",
+              "RelativeToolTip": "TheCoffee\\Models\\ViewModel\\OrderViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T15:38:10.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "TheCoffee\\Areas\\Admin\\Controllers\\CategoriesController.cs",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "TheCoffee\\Areas\\Admin\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAAALwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T01:02:45.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "TheCoffee\\Controllers\\CartController.cs",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Controllers\\CartController.cs",
+              "RelativeToolTip": "TheCoffee\\Controllers\\CartController.cs",
+              "ViewState": "AgIAAG0BAAAAAAAAAAAAAG4BAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T03:54:52.853Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 26,
+              "Title": "ViewPage1.cshtml",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\Home\\ViewPage1.cshtml",
+              "RelativeDocumentMoniker": "TheCoffee\\Views\\Home\\ViewPage1.cshtml",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\Home\\ViewPage1.cshtml",
+              "RelativeToolTip": "TheCoffee\\Views\\Home\\ViewPage1.cshtml",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAAAL8AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-12T18:25:23.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "TheCoffee\\Models\\Product.cs",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\Product.cs",
+              "RelativeToolTip": "TheCoffee\\Models\\Product.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T17:43:00.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CheckoutViewModel.cs",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\ViewModel\\CheckoutViewModel.cs",
+              "RelativeDocumentMoniker": "TheCoffee\\Models\\ViewModel\\CheckoutViewModel.cs",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\ViewModel\\CheckoutViewModel.cs",
+              "RelativeToolTip": "TheCoffee\\Models\\ViewModel\\CheckoutViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAMwAYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T03:00:26.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CartItemViewModel.cs",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\ViewModel\\CartItemViewModel.cs",
+              "RelativeDocumentMoniker": "TheCoffee\\Models\\ViewModel\\CartItemViewModel.cs",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\ViewModel\\CartItemViewModel.cs",
+              "RelativeToolTip": "TheCoffee\\Models\\ViewModel\\CartItemViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T03:30:40.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CartSessionHelper.cs",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Helpers\\CartSessionHelper.cs",
+              "RelativeDocumentMoniker": "TheCoffee\\Helpers\\CartSessionHelper.cs",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Helpers\\CartSessionHelper.cs",
+              "RelativeToolTip": "TheCoffee\\Helpers\\CartSessionHelper.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T03:46:31.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "TheCoffee.Designer.cs",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\TheCoffee.Designer.cs",
+              "RelativeDocumentMoniker": "TheCoffee\\Models\\TheCoffee.Designer.cs",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\TheCoffee.Designer.cs",
+              "RelativeToolTip": "TheCoffee\\Models\\TheCoffee.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T04:22:11.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "TheCoffee\\Views\\Account\\Register.cshtml",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "TheCoffee\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-08T03:06:27.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Views\\Categories\\Details.cshtml",
+              "RelativeDocumentMoniker": "TheCoffee\\Areas\\Admin\\Views\\Categories\\Details.cshtml",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Views\\Categories\\Details.cshtml",
+              "RelativeToolTip": "TheCoffee\\Areas\\Admin\\Views\\Categories\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-07T01:20:28.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CustomerOrderVM.cs",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\ViewModel\\CustomerOrderVM.cs",
+              "RelativeDocumentMoniker": "TheCoffee\\Models\\ViewModel\\CustomerOrderVM.cs",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\ViewModel\\CustomerOrderVM.cs",
+              "RelativeToolTip": "TheCoffee\\Models\\ViewModel\\CustomerOrderVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T18:02:34.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Rating.cs",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\Rating.cs",
+              "RelativeDocumentMoniker": "TheCoffee\\Models\\Rating.cs",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\Rating.cs",
+              "RelativeToolTip": "TheCoffee\\Models\\Rating.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T17:42:54.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Role.cs",
+              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "TheCoffee\\Models\\Role.cs",
+              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\Role.cs",
+              "RelativeToolTip": "TheCoffee\\Models\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T17:43:19.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
               "Title": "ProductViewModel.cs",
               "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\ViewModel\\ProductViewModel.cs",
               "RelativeDocumentMoniker": "TheCoffee\\Models\\ViewModel\\ProductViewModel.cs",
@@ -579,19 +721,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "_AdminLayout.cshtml",
-              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "RelativeDocumentMoniker": "TheCoffee\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "RelativeToolTip": "TheCoffee\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAC0AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-06T05:20:56.118Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 42,
               "Title": "AdminUserController.cs",
               "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\AdminUserController.cs",
               "RelativeDocumentMoniker": "TheCoffee\\Areas\\Admin\\AdminUserController.cs",
@@ -603,7 +733,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 40,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Views\\AdminUser\\Index.cshtml",
               "RelativeDocumentMoniker": "TheCoffee\\Areas\\Admin\\Views\\AdminUser\\Index.cshtml",
@@ -615,7 +745,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 38,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Views\\AdminUser\\Details.cshtml",
               "RelativeDocumentMoniker": "TheCoffee\\Areas\\Admin\\Views\\AdminUser\\Details.cshtml",
@@ -627,7 +757,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 39,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Views\\AdminUser\\Edit.cshtml",
               "RelativeDocumentMoniker": "TheCoffee\\Areas\\Admin\\Views\\AdminUser\\Edit.cshtml",
@@ -639,7 +769,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 41,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Views\\AdminUser\\Delete.cshtml",
               "RelativeDocumentMoniker": "TheCoffee\\Areas\\Admin\\Views\\AdminUser\\Delete.cshtml",
@@ -651,19 +781,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "AdminHomeController.cs",
-              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Controllers\\AdminHomeController.cs",
-              "RelativeDocumentMoniker": "TheCoffee\\Areas\\Admin\\Controllers\\AdminHomeController.cs",
-              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Controllers\\AdminHomeController.cs",
-              "RelativeToolTip": "TheCoffee\\Areas\\Admin\\Controllers\\AdminHomeController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T00:41:43.728Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 44,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Views\\Categories\\Create.cshtml",
               "RelativeDocumentMoniker": "TheCoffee\\Areas\\Admin\\Views\\Categories\\Create.cshtml",
@@ -675,7 +793,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 43,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
               "RelativeDocumentMoniker": "TheCoffee\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
@@ -687,19 +805,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "Payment.cs",
-              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\Payment.cs",
-              "RelativeDocumentMoniker": "TheCoffee\\Models\\Payment.cs",
-              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\Payment.cs",
-              "RelativeToolTip": "TheCoffee\\Models\\Payment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T15:15:55.076Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 45,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Views\\Products\\Index.cshtml",
               "RelativeDocumentMoniker": "TheCoffee\\Areas\\Admin\\Views\\Products\\Index.cshtml",
@@ -711,7 +817,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 46,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "TheCoffee\\Areas\\Admin\\Controllers\\ProductsController.cs",
@@ -723,7 +829,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 49,
               "Title": "OrderType.cs",
               "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\OrderType.cs",
               "RelativeDocumentMoniker": "TheCoffee\\Models\\OrderType.cs",
@@ -735,19 +841,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "CategoriesController.cs",
-              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Controllers\\CategoriesController.cs",
-              "RelativeDocumentMoniker": "TheCoffee\\Areas\\Admin\\Controllers\\CategoriesController.cs",
-              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Controllers\\CategoriesController.cs",
-              "RelativeToolTip": "TheCoffee\\Areas\\Admin\\Controllers\\CategoriesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T01:02:45.5Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 47,
               "Title": "Checkout.cshtml",
               "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\Cart\\Checkout.cshtml",
               "RelativeDocumentMoniker": "TheCoffee\\Views\\Cart\\Checkout.cshtml",
@@ -759,7 +853,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 48,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\Cart\\Index.cshtml",
               "RelativeDocumentMoniker": "TheCoffee\\Views\\Cart\\Index.cshtml",
@@ -771,7 +865,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 50,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Views\\Categories\\Edit.cshtml",
               "RelativeDocumentMoniker": "TheCoffee\\Areas\\Admin\\Views\\Categories\\Edit.cshtml",
@@ -783,7 +877,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 51,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Views\\Categories\\Delete.cshtml",
               "RelativeDocumentMoniker": "TheCoffee\\Areas\\Admin\\Views\\Categories\\Delete.cshtml",
@@ -795,7 +889,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 52,
               "Title": "admin.css",
               "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Content\\mycss\\admin.css",
               "RelativeDocumentMoniker": "TheCoffee\\Content\\mycss\\admin.css",
@@ -807,19 +901,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "admin.js",
-              "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Content\\myjs\\admin.js",
-              "RelativeDocumentMoniker": "TheCoffee\\Content\\myjs\\admin.js",
-              "ToolTip": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Content\\myjs\\admin.js",
-              "RelativeToolTip": "TheCoffee\\Content\\myjs\\admin.js",
-              "ViewState": "AgIAALMAAAAAAAAAAAAgwNYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-07-07T00:40:08.445Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 53,
               "Title": "customer.js",
               "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Content\\myjs\\customer.js",
               "RelativeDocumentMoniker": "TheCoffee\\Content\\myjs\\customer.js",
@@ -831,7 +913,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 54,
               "Title": "Error.cshtml",
               "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "TheCoffee\\Views\\Shared\\Error.cshtml",
@@ -843,7 +925,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 56,
               "Title": "TheCoffee.edmx.diagram",
               "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Models\\TheCoffee.edmx.diagram",
               "RelativeDocumentMoniker": "TheCoffee\\Models\\TheCoffee.edmx.diagram",
@@ -855,7 +937,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 55,
               "Title": "Profile.cshtml",
               "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\Account\\Profile.cshtml",
               "RelativeDocumentMoniker": "TheCoffee\\Views\\Account\\Profile.cshtml",
@@ -867,7 +949,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 57,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Views\\Products\\Edit.cshtml",
               "RelativeDocumentMoniker": "TheCoffee\\Areas\\Admin\\Views\\Products\\Edit.cshtml",
@@ -879,7 +961,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 58,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "TheCoffee\\Views\\_ViewStart.cshtml",
@@ -891,7 +973,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 59,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\HUFLIT\\CNPM _ COFFEE WEB\\TheCoffeeWeb\\TheCoffee\\Areas\\Admin\\Views\\Products\\Create.cshtml",
               "RelativeDocumentMoniker": "TheCoffee\\Areas\\Admin\\Views\\Products\\Create.cshtml",

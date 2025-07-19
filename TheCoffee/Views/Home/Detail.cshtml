@@ -1,0 +1,59 @@
+﻿@model TheCoffee.Models.Product
+
+@{
+    ViewBag.Title = "Chi tiết sản phẩm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-5">
+            <img src="@Model.Img" alt="@Model.ProductName" class="img-fluid rounded shadow" />
+        </div>
+        <div class="col-md-7">
+            <h2 class="fw-bold">@Model.ProductName</h2>
+            
+
+            <p class="text-muted mb-3">Danh mục: @Model.Category.CategoryName</p>
+            <h4 class="text-warning mb-3">@String.Format("{0:N0}đ", Model.Price)</h4>
+            <p>@Model.Description</p>
+
+            <button class="btn btn-warning btn-lg mt-3" onclick="addToCart('@Model.ProductName', @Model.Price)">
+                <i class="fas fa-cart-plus me-2"></i>Thêm vào giỏ hàng
+            </button>
+
+            <a href="@Url.Action("Index", "Home")" class="btn btn-link mt-3">← Quay lại danh sách</a>
+        </div>
+    </div>
+</div>
+@if (ViewBag.Related != null && ((List<TheCoffee.Models.Product>)ViewBag.Related).Any())
+{
+    <hr class="mt-5" />
+    <h4 class="mt-4 mb-3">Có thể bạn cũng thích</h4>
+    <div class="row">
+        @foreach (var p in (List<TheCoffee.Models.Product>)ViewBag.Related)
+        {
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="@p.Img" class="card-img-top" alt="@p.ProductName" style="height: 180px; object-fit: cover;">
+                    <div class="card-body">
+                        <h6 class="card-title">@p.ProductName</h6>
+                        <p class="text-warning fw-bold mb-2">@String.Format("{0:N0}đ", p.Price)</p>
+                        <a href="@Url.Action("Detail", "Home", new { id = p.ProductID })" class="btn btn-outline-warning btn-sm w-100">
+                            Xem chi tiết
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+@section Scripts {
+    <script>
+        function addToCart(name, price) {
+            alert("Đã thêm '" + name + "' vào giỏ hàng (giá: " + price + "đ)");
+            // Bạn có thể gọi Ajax để xử lý giỏ hàng ở đây
+        }
+    </script>
+}

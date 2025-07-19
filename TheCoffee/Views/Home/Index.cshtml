@@ -1,0 +1,60 @@
+﻿@model List<TheCoffee.Models.Product>
+
+@{
+    ViewBag.Title = "Tìm kiếm sản phẩm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="text-center mt-4">Tìm kiếm & lọc sản phẩm</h2>
+
+<!-- FORM TÌM KIẾM VÀ LỌC -->
+<form method="get" class="row g-3 mb-5">
+    <div class="col-md-4">
+        <input type="text" name="search" class="form-control" placeholder="Từ khóa"
+               value="@ViewBag.Search" />
+    </div>
+    <div class="col-md-3">
+        @Html.DropDownList("categoryId", (SelectList)ViewBag.Categories, "Tất cả danh mục", new { @class = "form-select" })
+    </div>
+    <div class="col-md-2">
+        <input type="number" name="minPrice" class="form-control" placeholder="Giá từ"
+               value="@ViewBag.MinPrice" min="0" />
+    </div>
+    <div class="col-md-2">
+        <input type="number" name="maxPrice" class="form-control" placeholder="Giá đến"
+               value="@ViewBag.MaxPrice" min="0" />
+    </div>
+    <div class="col-md-1">
+        <button type="submit" class="btn btn-warning w-100">Lọc</button>
+    </div>
+</form>
+
+<!-- DANH SÁCH SẢN PHẨM -->
+<div class="row">
+    @if (!Model.Any())
+    {
+        <div class="col-12 text-center">
+            <p class="text-muted">Không tìm thấy sản phẩm nào phù hợp.</p>
+        </div>
+    }
+    else
+    {
+        foreach (var item in Model)
+        {
+            <div class="col-md-3 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="@item.Img" class="card-img-top" alt="@item.ProductName" style="height: 180px; object-fit: cover;" />
+                    <div class="card-body">
+                        <h5 class="card-title">@item.ProductName</h5>
+                        <p class="card-text">@item.Description</p>
+                        <p class="text-warning fw-bold">@String.Format("{0:N0}đ", item.Price)</p>
+                        <a href="@Url.Action("Detail", "Home", new { id = item.ProductID })" class="btn btn-sm btn-outline-warning">
+                            Chi tiết
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>

@@ -44,6 +44,7 @@
     <Property Name="OrderTypeID" Type="int" Nullable="false" />
     <Property Name="UserID" Type="int" Nullable="false" />
     <Property Name="CartID" Type="int" />
+    <Property Name="CreateAt" Type="datetime" />
   </EntityType>
   <EntityType Name="OrderTypes">
     <Key>

@@ -1,0 +1,125 @@
+﻿@model TheCoffee.Models.ViewModel.OrderCreateVM
+
+@{
+    ViewBag.Title = "Tạo đơn mới";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Tạo đơn hàng</h2>
+
+@using (Html.BeginForm("Create", "AdminOrder", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        <label for="OrderTypeID">Loại đơn</label>
+        @Html.DropDownListFor(m => m.OrderTypeID, Model.OrderTypes, "-- Chọn loại đơn --", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.OrderTypeID)
+    </div>
+
+    <div class="form-group">
+        <label for="Address">Địa chỉ (nếu giao hàng)</label>
+        @Html.TextBoxFor(m => m.Address, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        <label for="Note">Ghi chú</label>
+        @Html.TextAreaFor(m => m.Note, new { @class = "form-control", rows = 3 })
+    </div>
+
+    <h4>Chọn sản phẩm</h4>
+    <div class="row">
+        @foreach (var cate in Model.Categories)
+        {
+            <div class="col-md-12">
+                <h5>@cate.CategoryName</h5>
+                <div class="row">
+                    @foreach (var prod in Model.AvailableProducts.Where(p => p.CategoryID == cate.CategoryID))
+                    {
+                        <div class="col-md-3 mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="card-title">@prod.ProductName</h6>
+                                    <p class="card-text">Giá: @prod.Price VND</p>
+                                    <button type="button" class="btn btn-sm btn-primary" onclick="addToCart(@prod.ProductID, '@prod.ProductName', @prod.Price)">Chọn</button>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+
+    <h4>Giỏ hàng tạm</h4>
+    <table class="table table-bordered" id="cartTable">
+        <thead>
+            <tr>
+                <th>Sản phẩm</th>
+                <th>Số lượng</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    @Html.HiddenFor(m => m.ItemsJson, new { id = "itemsJson" })
+
+    <button type="submit" class="btn btn-success">Tạo đơn</button>
+}
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        var cart = [];
+
+        function addToCart(productId, productName, price) {
+            const existing = cart.find(p => p.ProductID === productId);
+            if (existing) {
+                existing.Quantity += 1;
+            } else {
+                cart.push({ ProductID: productId, ProductName: productName, Quantity: 1, Price: price });
+            }
+            renderCart();
+        }
+
+        function renderCart() {
+            const tbody = $('#cartTable tbody');
+            tbody.empty();
+            cart.forEach((item, index) => {
+                tbody.append(`
+                        <tr>
+                            <td>${item.ProductName}</td>
+                            <td>
+                                <input type="number" min="1" value="${item.Quantity}" onchange="updateQty(${index}, this.value)" class="form-control form-control-sm" />
+                            </td>
+                            <td><button class="btn btn-sm btn-danger" onclick="removeItem(${index})">Xóa</button></td>
+                        </tr>
+                    `);
+            });
+
+            // Gán lại giá trị cho ItemsJson
+            $('#itemsJson').val(JSON.stringify(cart));
+        }
+
+        function updateQty(index, qty) {
+            const newQty = parseInt(qty);
+            if (!isNaN(newQty) && newQty > 0) {
+                cart[index].Quantity = newQty;
+                renderCart();
+            }
+        }
+
+        function removeItem(index) {
+            cart.splice(index, 1);
+            renderCart();
+        }
+
+        // Log khi submit để debug
+        $('form').submit(function () {
+            console.log("ItemsJson sẽ gửi:", $('#itemsJson').val());
+        });
+    </script>
+}

@@ -58,6 +58,7 @@
     <NavigationProperty Name="User" Relationship="Self.FK__Orders__UserID__619B8048" FromRole="Orders" ToRole="Users" />
     <NavigationProperty Name="Payments" Relationship="Self.FK__Payments__OrderI__66603565" FromRole="Orders" ToRole="Payments" />
     <NavigationProperty Name="Ratings" Relationship="Self.FK__Ratings__OrderID__6EF57B66" FromRole="Orders" ToRole="Ratings" />
+    <Property Name="CreateAt" Type="DateTime" Precision="3" />
   </EntityType>
   <EntityType Name="OrderType">
     <Key>

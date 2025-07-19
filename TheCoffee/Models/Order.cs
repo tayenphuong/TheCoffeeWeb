@@ -29,6 +29,7 @@ namespace TheCoffee.Models
         public int OrderTypeID { get; set; }
         public int UserID { get; set; }
         public Nullable<int> CartID { get; set; }
+        public Nullable<System.DateTime> CreateAt { get; set; }
     
         public virtual Cart Cart { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

@@ -186,9 +186,7 @@ namespace TheCoffee.Areas.Admin.Controllers
                 return View(category);
             }
 
-            db.Categories.Remove(category); // ✅ Nếu xóa cứng
-                                            // hoặc
-                                            // category.TrangThai = false; db.Entry(category).State = EntityState.Modified;
+            db.Categories.Remove(category); 
 
             try
             {
