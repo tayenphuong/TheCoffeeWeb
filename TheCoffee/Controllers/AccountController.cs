@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using TheCoffee.Models;
-
+using TheCoffee.Models.ViewModel;
 namespace TheCoffee.Controllers
 {
     public class AccountController : Controller
@@ -20,38 +20,35 @@ namespace TheCoffee.Controllers
         // ĐĂNG KÝ PHƯƠNG THỨC POST
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Register(User user)
+        public ActionResult Register(RegisterVM vm)
         {
             if (!ModelState.IsValid)
             {
-                return View(user);
+                return View(vm);
             }
 
-            // Kiểm tra trùng email
-            var exists = db.Users.Any(u => u.Email == user.Email);
+            var exists = db.Users.Any(u => u.Email == vm.Email);
             if (exists)
             {
-                ViewBag.Error = "Email đã được sử dụng. Vui lòng chọn email khác.";
-                return View(user);
+                ViewBag.Error = "Email đã được sử dụng.";
+                return View(vm);
             }
 
-            // Gán quyền mặc định là Customer
-            user.RoleID = 2;
-
-            try
+            var user = new User
             {
-                db.Users.Add(user);
-                db.SaveChanges();
+                UserName = vm.UserName,
+                Password = vm.Password, // bạn có thể mã hóa sau
+                FullName = vm.FullName,
+                Phone = vm.Phone,
+                Email = vm.Email,
+                RoleID = 2
+            };
 
-                ViewBag.RegOk = "Đăng ký thành công! Đăng nhập ngay.";
-                ViewBag.isReg = true;
-                return View("Register");
-            }
-            catch (Exception ex)
-            {
-                ViewBag.Error = "Có lỗi xảy ra khi đăng ký: " + ex.Message;
-                return View(user);
-            }
+            db.Users.Add(user);
+            db.SaveChanges();
+
+            ViewBag.RegOk = "Đăng ký thành công!";
+            return View("Register");
         }
 
         // GET: Account/Login

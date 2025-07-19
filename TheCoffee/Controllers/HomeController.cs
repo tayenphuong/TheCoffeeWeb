@@ -23,9 +23,51 @@ namespace TheCoffee.Controllers
             return View(products);
         }
         
-        public ActionResult ViewPage1()
+        public ActionResult CustomerHome(string search, int? categoryId, string sortOrder, int page = 1)
         {
-            return View();
+            int pageSize = 8;
+            var query = db.Products.AsQueryable();
+
+            if (!string.IsNullOrEmpty(search))
+                query = query.Where(p => p.ProductName.Contains(search));
+
+            if (categoryId.HasValue)
+                query = query.Where(p => p.CategoryID == categoryId.Value);
+
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    query = query.OrderByDescending(p => p.ProductName);
+                    break;
+                case "price_asc":
+                    query = query.OrderBy(p => p.Price);
+                    break;
+                case "price_desc":
+                    query = query.OrderByDescending(p => p.Price);
+                    break;
+                //case "newest":
+                //    query = query.OrderByDescending(p => p.CreatedDate);
+                //    break;
+                default:
+                    query = query.OrderBy(p => p.ProductName);
+                    break;
+            }
+
+            int totalItems = query.Count();
+            var products = query.Skip((page - 1) * pageSize).Take(pageSize).ToList();
+
+            var vm = new HomeIndexVM
+            {
+                Products = products,
+                Categories = db.Categories.ToList(),
+                SearchKeyword = search,
+                SelectedCategoryId = categoryId,
+                SortOrder = sortOrder,
+                Page = page,
+                TotalPages = (int)Math.Ceiling((double)totalItems / pageSize)
+            };
+
+            return View(vm);
         }
         public ActionResult Index(string search, int? categoryId, int? minPrice, int? maxPrice)
         {

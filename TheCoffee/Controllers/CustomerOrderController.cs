@@ -17,7 +17,10 @@ namespace TheCoffee.Controllers
         public ActionResult Index()
         {
             int userId = (int)Session["UserID"];
-
+            //if (userId == null)
+            //{
+            //    return new HttpStatusCodeResult(HttpStatusCode.Unauthorized);
+            //}
             var orders = db.Orders
                            .Include(o => o.OrderType)
                            .Include(o => o.OrderDetails.Select(od => od.Product))

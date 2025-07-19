@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewBag.Title = "CutomerHome";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container my-4">
+
+        <form method="get" class="row mb-3">
+            <div class="col-md-3">
+                <input type="text" name="search" value="@Model.SearchKeyword" class="form-control" placeholder="Tìm sản phẩm..." />
+            </div>
+            <div class="col-md-3">
+                <select name="categoryId" class="form-select">
+                    <option value="">-- Tất cả danh mục --</option>
+                    @foreach (var cat in Model.Categories)
+                    {
+                        <option value="@cat.CategoryID" @(Model.SelectedCategoryId == cat.CategoryID ? "selected" : "")>@cat.CategoryName</option>
+                    }
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select name="sortOrder" class="form-select">
+                    <option value="">Sắp xếp theo</option>
+                    <option value="name_desc" @(Model.SortOrder == "name_desc" ? "selected" : "")>Tên Z-A</option>
+                    <option value="price_asc" @(Model.SortOrder == "price_asc" ? "selected" : "")>Giá thấp đến cao</option>
+                    <option value="price_desc" @(Model.SortOrder == "price_desc" ? "selected" : "")>Giá cao đến thấp</option>
+                    @*<option value="newest" @(Model.SortOrder == "newest" ? "selected" : "")>Mới nhất</option>*@
+                </select>
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-primary w-100">Lọc</button>
+            </div>
+        </form>
+    <div class="row">
+        @foreach (var item in Model.Products)
+        {
+            <div class="col-md-3 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="@item.Img" class="card-img-top" />
+                    <div class="card-body">
+                        <h5 class="card-title">@item.ProductName</h5>
+                        <p class="card-text text-danger">@item.Price.ToString("N0") ₫</p>
+                        <a href="@Url.Action("Detail", "Home", new { id = item.ProductID })" class="btn btn-sm btn-outline-warning">
+                            Chi tiết
+                        </a>
+                        <button style="margin:10px" class="btn btn-warning btn-sm" onclick="addToCart(@item.ProductID)">
+                            <i class="fa-solid fa-cart-plus"></i> Thêm
+                        </button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <nav aria-label="Phân trang">
+        <ul class="pagination justify-content-center">
+            @for (int i = 1; i <= Model.TotalPages; i++)
+            {
+                <li class="page-item @(i == Model.Page ? "active" : "")">
+                    <a class="page-link" href="?search=@Model.SearchKeyword&categoryId=@Model.SelectedCategoryId&sortOrder=@Model.SortOrder&page=@i">@i</a>
+                </li>
+            }
+        </ul>
+    </nav>
+</div>
+
+<style>
+    .card:hover {
+        transform: scale(1.03);
+        transition: 0.3s ease;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .card-img-top {
+        height: 180px;
+        object-fit: cover;
+    }
+</style>

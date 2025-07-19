@@ -200,9 +200,11 @@
     <Compile Include="Models\ViewModel\CartItemViewModel.cs" />
     <Compile Include="Models\ViewModel\CheckoutViewModel.cs" />
     <Compile Include="Models\ViewModel\CustomerOrderVM.cs" />
+    <Compile Include="Models\ViewModel\HomeIndexVM.cs" />
     <Compile Include="Models\ViewModel\OrderCreateVM.cs" />
     <Compile Include="Models\ViewModel\OrderViewModel.cs" />
     <Compile Include="Models\ViewModel\ProductViewModel.cs" />
+    <Compile Include="Models\ViewModel\RegisterVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -314,6 +316,7 @@
     <Content Include="Views\Home\ViewPage1.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Detail.cshtml" />
+    <Content Include="Views\Home\CustomerHome.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
