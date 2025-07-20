@@ -142,6 +142,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CancelOrder.cs">
+      <DependentUpon>TheCoffee.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Cart.cs">
       <DependentUpon>TheCoffee.tt</DependentUpon>
     </Compile>
@@ -280,6 +283,7 @@
     <Content Include="Areas\Admin\Views\AdminUser\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\AdminUser\Delete.cshtml" />
     <Content Include="Areas\Admin\Views\AdminOrder\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminOrder\Cancel.cshtml" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />

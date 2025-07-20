@@ -64,7 +64,10 @@
                                     break;
                                 }
                             }
-                        <span class="@statusClass">@statusText</span>
+                        <span class="@statusClass"
+                              title="@(order.CancelOrder != null ? "Lý do: " + order.CancelOrder.Reason : "")">
+                            @statusText
+                        </span>
                     </td>
                     <td>
                         <div class="d-flex gap-2">
@@ -73,7 +76,11 @@
                             @if (order.OrderStatus == 1)
                             {
                                 @Html.ActionLink("Xác nhận", "Confirm", new { id = order.OrderID }, new { @class = "btn btn-sm btn-outline-success" })
-                                @Html.ActionLink("Hủy", "Cancel", new { id = order.OrderID }, new { @class = "btn btn-sm btn-outline-danger" })
+                               
+                            }
+                            @if (order.OrderStatus != 3 && order.OrderStatus != 4)
+                            {
+                              @Html.ActionLink("Hủy", "Cancel", new { id = order.OrderID }, new { @class = "btn btn-sm btn-outline-danger" })
                             }
                         </div>
                     </td>

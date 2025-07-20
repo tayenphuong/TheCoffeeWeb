@@ -17,10 +17,7 @@ namespace TheCoffee.Controllers
         public ActionResult Index()
         {
             int userId = (int)Session["UserID"];
-            //if (userId == null)
-            //{
-            //    return new HttpStatusCodeResult(HttpStatusCode.Unauthorized);
-            //}
+        
             var orders = db.Orders
                            .Include(o => o.OrderType)
                            .Include(o => o.OrderDetails.Select(od => od.Product))
@@ -106,7 +103,40 @@ namespace TheCoffee.Controllers
             return RedirectToAction("Details", new { id = orderId });
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult CancelFromDetail(int OrderID, string Reason)
+        {
+            try
+            {
+                var order = db.Orders.Find(OrderID);
+                if (order == null || order.OrderStatus != 1)
+                    return HttpNotFound();
 
+                var cancel = new CancelOrder
+                {
+                    OrderID = OrderID,
+                    Reason = Reason,
+                    CancelDate = DateTime.Now,
+                    CanceledBy = (int)Session["UserID"] // nếu bảng yêu cầu
+                };
+                db.CancelOrders.Add(cancel);
+                order.OrderStatus = 4;
+
+                db.SaveChanges();
+                TempData["Success"] = "Huỷ đơn hàng thành công.";
+                return RedirectToAction("Details", new { id = OrderID });
+            }
+            catch (Exception ex)
+            {
+                var msg = ex.Message;
+                if (ex.InnerException != null) msg += " → " + ex.InnerException.Message;
+                if (ex.InnerException?.InnerException != null) msg += " → " + ex.InnerException.InnerException.Message;
+
+                TempData["Error"] = "Lỗi khi huỷ đơn: " + msg;
+                return RedirectToAction("Details", new { id = OrderID });
+            }
+        }
 
         protected override void Dispose(bool disposing)
         {

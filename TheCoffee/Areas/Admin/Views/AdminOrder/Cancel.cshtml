@@ -1,0 +1,21 @@
+﻿  @*//???*@
+@model int
+@{
+    ViewBag.Title = "Hủy đơn hàng";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container mt-5">
+    <h3>Hủy đơn hàng #@Model</h3>
+    @using (Html.BeginForm("CancelConfirmed", "AdminOrder", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        @Html.Hidden("OrderID", Model)
+        <div class="mb-3">
+            <label for="Reason">Lý do hủy</label>
+            <textarea name="Reason" class="form-control" required rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-danger">Xác nhận hủy</button>
+        @Html.ActionLink("Hủy bỏ", "Index", null, new { @class = "btn btn-secondary ms-2" })
+    }
+</div>

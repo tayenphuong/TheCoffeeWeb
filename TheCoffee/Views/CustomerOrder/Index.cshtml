@@ -5,7 +5,10 @@
 }
 
 <h2 class="mb-4">Đơn hàng của tôi</h2>
-
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
 @if (!Model.Any())
 {
     <div class="alert alert-info">Bạn chưa có đơn hàng nào.</div>
@@ -17,22 +20,19 @@ else
             <tr>
                 <th>Mã đơn</th>
                 <th>Loại đơn</th>
-                @*<th>Tổng tiền</th>*@ 
+                @*<th>Tổng tiền</th>*@
                 <th>Trạng thái</th>
                 <th>Thao tác</th>
             </tr>
         </thead>
         <tbody>
             @foreach (var item in Model)
-             {
-               
+            {
                 var order = item.Order;
-               
                 <tr>
                     <td class="text-center">#@order.OrderID</td>
                     <td>@order.OrderType.OrderTypeName</td>
-                    @*<td>@item.Payments.</td>*@
-                    
+
                     <td>
                         @{
                             string status = "";
@@ -47,22 +47,61 @@ else
                         }
                         <span class="badge bg-secondary">@status</span>
                     </td>
+
                     <td>
                         <a href="@Url.Action("Details", "CustomerOrder", new { id = order.OrderID })" class="btn btn-sm btn-outline-primary">
                             <i class="fas fa-eye"></i> Xem
                         </a>
 
                         @if (item.HasUnrated)
-                         {
+                        {
                             <span class="btn btn-sm btn-outline-success ms-2">
                                 <i class="fas fa-star"></i>
                             </span>
-                            
-                         }
-                    </td>
+                        }
 
+                        @* Nếu đơn đang chờ xác nhận, hiển thị nút hủy + modal *@
+                        @if (order.OrderStatus == 1)
+                        {
+                            string modalId = "cancelModal_" + order.OrderID;
+
+                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#@modalId">
+                                <i class="fas fa-times-circle"></i> Huỷ đơn hàng
+                            </button>
+
+                            <!-- Modal riêng cho đơn hàng này -->
+                            <div class="modal fade" id="@modalId" tabindex="-1" aria-labelledby="cancelModalLabel_@order.OrderID" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    @using (Html.BeginForm("CancelFromDetail", "CustomerOrder", FormMethod.Post))
+                                    {
+                                        @Html.AntiForgeryToken()
+                                        @Html.Hidden("OrderID", order.OrderID)
+
+                                        <div class="modal-content">
+                                            <div class="modal-header bg-danger text-white">
+                                                <h5 class="modal-title" id="cancelModalLabel_@order.OrderID">Xác nhận huỷ đơn #@order.OrderID</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="mb-3">
+                                                    <label for="Reason" class="form-label">Lý do huỷ</label>
+                                                    <textarea name="Reason" class="form-control" rows="3" required></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                                <button type="submit" class="btn btn-danger">Xác nhận huỷ</button>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        }
+                    </td>
                 </tr>
-             }
+            }
+
         </tbody>
     </table>
+
 }

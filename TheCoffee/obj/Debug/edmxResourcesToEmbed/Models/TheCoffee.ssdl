@@ -1,5 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="TheCoffeeWebModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CancelOrder">
+    <Key>
+      <PropertyRef Name="CancelID" />
+    </Key>
+    <Property Name="CancelID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OrderID" Type="int" Nullable="false" />
+    <Property Name="CanceledBy" Type="int" Nullable="false" />
+    <Property Name="CancelReason" Type="nvarchar" MaxLength="255" />
+    <Property Name="CancelDate" Type="datetime" Nullable="false" />
+  </EntityType>
   <EntityType Name="CartItems">
     <Key>
       <PropertyRef Name="CartID" />
@@ -120,6 +130,30 @@
     <Property Name="Email" Type="nvarchar" MaxLength="100" Nullable="false" />
     <Property Name="RoleID" Type="int" Nullable="false" />
   </EntityType>
+  <Association Name="FK__CancelOrd__Cance__17F790F9">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="CancelOrder" Type="Self.CancelOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="CancelOrder">
+        <PropertyRef Name="CanceledBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CancelOrd__Order__17036CC0">
+    <End Role="Orders" Type="Self.Orders" Multiplicity="1" />
+    <End Role="CancelOrder" Type="Self.CancelOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="OrderID" />
+      </Principal>
+      <Dependent Role="CancelOrder">
+        <PropertyRef Name="OrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK__CartItems__CartI__59063A47">
     <End Role="Carts" Type="Self.Carts" Multiplicity="1" />
     <End Role="CartItems" Type="Self.CartItems" Multiplicity="*" />
@@ -301,6 +335,7 @@
     </ReferentialConstraint>
   </Association>
   <EntityContainer Name="TheCoffeeWebModelStoreContainer">
+    <EntitySet Name="CancelOrder" EntityType="Self.CancelOrder" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="CartItems" EntityType="Self.CartItems" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Carts" EntityType="Self.Carts" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Categories" EntityType="Self.Categories" Schema="dbo" store:Type="Tables" />
@@ -314,6 +349,14 @@
     <EntitySet Name="Ratings" EntityType="Self.Ratings" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__CancelOrd__Cance__17F790F9" Association="Self.FK__CancelOrd__Cance__17F790F9">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="CancelOrder" EntitySet="CancelOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CancelOrd__Order__17036CC0" Association="Self.FK__CancelOrd__Order__17036CC0">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="CancelOrder" EntitySet="CancelOrder" />
+    </AssociationSet>
     <AssociationSet Name="FK__CartItems__CartI__59063A47" Association="Self.FK__CartItems__CartI__59063A47">
       <End Role="Carts" EntitySet="Carts" />
       <End Role="CartItems" EntitySet="CartItems" />

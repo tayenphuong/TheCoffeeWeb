@@ -7,6 +7,8 @@ using System.Web.Mvc;
 using TheCoffee.Models;
 using TheCoffee.Models.ViewModel;
 using Newtonsoft.Json;
+using System.Web.UI.WebControls;
+using System.Drawing;
 
 
 namespace TheCoffee.Areas.Admin.Controllers
@@ -21,6 +23,7 @@ namespace TheCoffee.Areas.Admin.Controllers
         {
             var orders = db.Orders.Include(o => o.User)
                                   .Include(o => o.OrderType)
+                                  .Include(o => o.CancelOrders)
                                   .OrderByDescending(o => o.OrderID)
                                   .ToList();
             return View(orders);
@@ -65,17 +68,52 @@ namespace TheCoffee.Areas.Admin.Controllers
         public ActionResult Cancel(int id)
         {
             var order = db.Orders.Find(id);
-            if (order == null)
+            if (order == null || order.OrderStatus == 3 || order.OrderStatus == 4)
                 return HttpNotFound();
 
-            order.OrderStatus = 4; // Đã hủy -> 3: đã hoàn thành 
-            db.SaveChanges();
+            ViewBag.OrderID = id;
+            return View(id);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult CancelConfirmed(int OrderID, string Reason)
+        {
+            var order = db.Orders.Find(OrderID);
 
-            TempData["Success"] = "Đã hủy đơn hàng.";
+            if (order != null && (order.OrderStatus == 1 || order.OrderStatus == 2))
+            {
+                var userIdObj = Session["UserID"];
+                if (userIdObj == null)
+                {
+                    TempData["Error"] = "Chưa đăng nhập. Không thể hủy đơn.";
+                    return RedirectToAction("Index");
+                }
+
+                int userId = (int)userIdObj;
+
+                order.OrderStatus = 4; // Đã hủy
+
+                var cancel = new CancelOrder
+                {
+                    OrderID = OrderID,
+                    Reason = Reason,
+                    CancelDate = DateTime.Now,
+                    CanceledBy = userId
+                };
+                db.CancelOrders.Add(cancel);
+
+                db.Entry(order).State = EntityState.Modified;
+                db.SaveChanges();
+
+                TempData["Success"] = "Đã hủy đơn hàng thành công.";
+                return RedirectToAction("Index");
+            }
+
+            TempData["Error"] = "Không thể hủy đơn hàng.";
             return RedirectToAction("Index");
         }
 
-       
+
 
         [HttpGet]
         public ActionResult Create()

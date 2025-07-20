@@ -131,5 +131,16 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="CancelOrders">
+      <EntityTypeMapping TypeName="TheCoffeeWebModel.CancelOrder">
+        <MappingFragment StoreEntitySet="CancelOrder">
+          <ScalarProperty Name="CancelDate" ColumnName="CancelDate" />
+          <ScalarProperty Name="CancelReason" ColumnName="CancelReason" />
+          <ScalarProperty Name="CanceledBy" ColumnName="CanceledBy" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="CancelID" ColumnName="CancelID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>
