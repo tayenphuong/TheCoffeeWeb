@@ -22,12 +22,49 @@
                     <i class="fa-solid fa-cart-plus"></i> Thêm
                 </button>
             </div>
+            <div class="col-12 text-end mt-3">
+                <a href="@Url.Action("CustomerHome", "Home")" class="btn btn-outline-secondary">
+                    <i class="fas fa-arrow-left me-1"></i> Quay lại danh sách
+                </a>
+            </div>
 
-            <a href="@Url.Action("CustomerHome", "Home")" class="btn btn-link mt-3 btn-outline-light ">← Quay lại danh sách</a>
         </div>
     </div>
 </div>
+@if (Model.Ratings != null && Model.Ratings.Any())
+{
+    foreach (var rating in Model.Ratings.OrderByDescending(r => r.CreatedAt))
+    {
+        var user = rating.Order?.User;
 
+        <div class="card mb-3 p-3">
+            <div class="d-flex justify-content-between">
+                <strong>@(user?.FullName ?? "Người dùng")</strong>
+                <small>@rating.CreatedAt.ToString("dd/MM/yyyy")</small>
+            </div>
+            <div>
+                <span>
+                    @for (int i = 1; i <= 5; i++)
+                    {
+                        if (i <= rating.Rating1)
+                        {
+                            <span style="color:gold;">★</span>
+                        }
+                        else
+                        {
+                            <span style="color:#ccc;">★</span>
+                        }
+                    }
+                </span>
+            </div>
+            <p class="mt-2">@rating.Comment</p>
+        </div>
+    }
+}
+else
+{
+    <p>Chưa có đánh giá nào cho sản phẩm này.</p>
+}
 
 @if (ViewBag.Related != null && ((List<TheCoffee.Models.Product>)ViewBag.Related).Any())
 {

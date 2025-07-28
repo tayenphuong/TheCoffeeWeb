@@ -12,4 +12,12 @@ namespace TheCoffee.Models.ViewModel
         public int OrderTypeID { get; set; } // ví dụ: mang về, giao hàng
         public int MethodID { get; set; } // phương thức thanh toán
     }
+    public class OrderListVM
+    {
+        public List<Order> Moi { get; set; }
+        public List<Order> DangXuLy { get; set; }
+        public List<Order> DaGiao { get; set; }
+        public List<Order> DaHuy { get; set; }
+        public List<Order> DaHoanThanh { get; set; }
+    }
 }

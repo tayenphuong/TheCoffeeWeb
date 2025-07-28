@@ -1,5 +1,5 @@
 ﻿  @*//???*@
-@model int
+@model int?
 @{
     ViewBag.Title = "Hủy đơn hàng";
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
@@ -16,6 +16,7 @@
             <textarea name="Reason" class="form-control" required rows="4"></textarea>
         </div>
         <button type="submit" class="btn btn-danger">Xác nhận hủy</button>
-        @Html.ActionLink("Hủy bỏ", "Index", null, new { @class = "btn btn-secondary ms-2" })
+        @Html.ActionLink("Hủy bỏ", "Index", (object)null, new { @class = "btn btn-secondary ms-2" })
+
     }
 </div>

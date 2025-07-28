@@ -42,7 +42,7 @@
                     <div class="text-center mt-3">
                         @*<a href="@Url.Action("Index", Model.RoleID == 1 ? "AdminHome" : "CusHome", new { area = Model.RoleID == 1 ? "Admin" : "" })" class="btn btn-secondary">← Quay lại</a>*@
                         <a href="@Url.Action(
-                            Model.RoleID == 1 ? "AdminHome" : "CusHome", // action
+                            Model.RoleID == 1 ? "AdminHome" : "CustomerHome", // action
                             Model.RoleID == 1 ? "AdminHome" : "Home",  // controller
                             new { area = Model.RoleID == 1 ? "Admin" : "" } // area
                         )" class="btn btn-secondary"> Quay lại</a>

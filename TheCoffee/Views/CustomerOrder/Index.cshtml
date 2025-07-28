@@ -20,7 +20,6 @@ else
             <tr>
                 <th>Mã đơn</th>
                 <th>Loại đơn</th>
-                @*<th>Tổng tiền</th>*@
                 <th>Trạng thái</th>
                 <th>Thao tác</th>
             </tr>
@@ -35,17 +34,18 @@ else
 
                     <td>
                         @{
-                            string status = "";
+                            string statusText = "";
                             switch (order.OrderStatus)
                             {
-                                case 1: status = "Chờ xác nhận"; break;
-                                case 2: status = "Đã xác nhận"; break;
-                                case 3: status = "Đã hoàn thành"; break;
-                                case 4: status = "Đã hủy"; break;
-                                default: status = "Không rõ"; break;
+                                case 1: statusText = "Chờ xác nhận"; break;
+                                case 2: statusText = "Đã xác nhận"; break;
+                                case 3: statusText = "Đang giao"; break;
+                                case 4: statusText = "Đã hủy"; break;
+                                case 5: statusText = "Đã hoàn thành"; break;
+                                default: statusText = "Không xác định"; break;
                             }
                         }
-                        <span class="badge bg-secondary">@status</span>
+                        <span>@statusText</span>
                     </td>
 
                     <td>
@@ -65,7 +65,7 @@ else
                         {
                             string modalId = "cancelModal_" + order.OrderID;
 
-                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#@modalId">
+                            <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#@modalId">
                                 <i class="fas fa-times-circle"></i> Huỷ đơn hàng
                             </button>
 

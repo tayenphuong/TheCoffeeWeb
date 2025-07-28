@@ -142,63 +142,64 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\CartSessionHelper.cs" />
     <Compile Include="Models\CancelOrder.cs">
-      <DependentUpon>TheCoffee.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Cart.cs">
-      <DependentUpon>TheCoffee.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\CartItem.cs">
-      <DependentUpon>TheCoffee.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Category.cs">
-      <DependentUpon>TheCoffee.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Helpers\CartSessionHelper.cs" />
-    <Compile Include="Models\Order.cs">
-      <DependentUpon>TheCoffee.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\OrderDetail.cs">
-      <DependentUpon>TheCoffee.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\OrderType.cs">
-      <DependentUpon>TheCoffee.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Payment.cs">
-      <DependentUpon>TheCoffee.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\PaymentMethod.cs">
-      <DependentUpon>TheCoffee.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Product.cs">
-      <DependentUpon>TheCoffee.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ProductStatus.cs">
-      <DependentUpon>TheCoffee.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Rating.cs">
-      <DependentUpon>TheCoffee.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Role.cs">
-      <DependentUpon>TheCoffee.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TheCoffee.Context.cs">
+    <Compile Include="Models\Enums\OrderStatus.cs" />
+    <Compile Include="Models\Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TheCoffee.Context.tt</DependentUpon>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\TheCoffee.cs">
+    <Compile Include="Models\Model1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TheCoffee.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TheCoffee.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TheCoffee.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Order.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OrderDetail.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OrderType.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Payment.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PaymentMethod.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Product.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProductStatus.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Rating.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Role.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\User.cs">
-      <DependentUpon>TheCoffee.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ViewModel\CartItemViewModel.cs" />
     <Compile Include="Models\ViewModel\CheckoutViewModel.cs" />
@@ -240,15 +241,15 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\TheCoffee.Context.tt">
+    <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>TheCoffee.edmx</DependentUpon>
-      <LastGenOutput>TheCoffee.Context.cs</LastGenOutput>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\TheCoffee.tt">
+    <Content Include="Models\Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>TheCoffee.edmx</DependentUpon>
-      <LastGenOutput>TheCoffee.cs</LastGenOutput>
+      <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -259,13 +260,6 @@
     <Content Include="Areas\Admin\Views\web.config" />
     <Content Include="Areas\Admin\Views\AdminHome\AdminHome.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_AdminLayout.cshtml" />
-    <EntityDeploy Include="Models\TheCoffee.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>TheCoffee.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\TheCoffee.edmx.diagram">
-      <DependentUpon>TheCoffee.edmx</DependentUpon>
-    </Content>
     <Content Include="Areas\Admin\Views\Categories\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Categories\Delete.cshtml" />
     <Content Include="Areas\Admin\Views\Categories\Details.cshtml" />
@@ -284,6 +278,16 @@
     <Content Include="Areas\Admin\Views\AdminUser\Delete.cshtml" />
     <Content Include="Areas\Admin\Views\AdminOrder\Create.cshtml" />
     <Content Include="Areas\Admin\Views\AdminOrder\Cancel.cshtml" />
+    <EntityDeploy Include="Models\TheCoffee.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>TheCoffee.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\TheCoffee.edmx.diagram">
+      <DependentUpon>TheCoffee.edmx</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Views\AdminOrder\NewIndex.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminOrder\_OrderTablePartial.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminOrder\_CancelOrderInfoPV.cshtml" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -374,7 +378,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>61536</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:61536/</IISUrl>
+          <IISUrl>http://localhost:61540/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

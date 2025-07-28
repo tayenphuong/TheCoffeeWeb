@@ -37,7 +37,7 @@ namespace TheCoffee.Controllers
             var user = new User
             {
                 UserName = vm.UserName,
-                Password = vm.Password, // bạn có thể mã hóa sau
+                Password = vm.Password, 
                 FullName = vm.FullName,
                 Phone = vm.Phone,
                 Email = vm.Email,
@@ -81,7 +81,7 @@ namespace TheCoffee.Controllers
                 }
                 else
                 {
-                    return RedirectToAction("HomePage", "Home");
+                    return RedirectToAction("CustomerHome", "Home");
                 }
             }
             else

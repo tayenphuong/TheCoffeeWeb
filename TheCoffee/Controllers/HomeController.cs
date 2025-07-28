@@ -99,7 +99,11 @@ namespace TheCoffee.Controllers
         }
         public ActionResult Detail(int id)
         {
-            var product = db.Products.Include(n => n.Category).FirstOrDefault(p => p.ProductID == id);
+            var product = db.Products.Include(n => n.Category)
+                                     .Include(p => p.Ratings.Select(r => r.Order.User))
+                                     .FirstOrDefault(p => p.ProductID == id);
+
+
             if (product == null)
                 return HttpNotFound();
 

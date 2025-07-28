@@ -16,8 +16,13 @@ namespace TheCoffee.Controllers
         // Danh sách đơn hàng của khách hàng hiện tại
         public ActionResult Index()
         {
+            if (Session["UserID"] == null)
+            {
+                TempData["Message"] = "Vui lòng đăng nhập để xem đơn hàng.";
+                return RedirectToAction("Login", "Account"); // hoặc trang chủ tuỳ bạn
+            }
+
             int userId = (int)Session["UserID"];
-        
             var orders = db.Orders
                            .Include(o => o.OrderType)
                            .Include(o => o.OrderDetails.Select(od => od.Product))

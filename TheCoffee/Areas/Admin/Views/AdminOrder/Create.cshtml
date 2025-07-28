@@ -57,6 +57,7 @@
             <tr>
                 <th>Sản phẩm</th>
                 <th>Số lượng</th>
+                <th>Thành tiền</th>
                 <th></th>
             </tr>
         </thead>
@@ -88,18 +89,31 @@
         function renderCart() {
             const tbody = $('#cartTable tbody');
             tbody.empty();
+            let total = 0;
             cart.forEach((item, index) => {
+                const thanhTien = item.Quantity * item.Price;
+                total += thanhTien;
                 tbody.append(`
-                        <tr>
-                            <td>${item.ProductName}</td>
-                            <td>
-                                <input type="number" min="1" value="${item.Quantity}" onchange="updateQty(${index}, this.value)" class="form-control form-control-sm" />
-                            </td>
-                            <td><button class="btn btn-sm btn-danger" onclick="removeItem(${index})">Xóa</button></td>
-                        </tr>
-                    `);
+                                        <tr>
+                                            <td>${item.ProductName}</td>
+                                            <td>
+                                                <input type="number" min="1" value="${item.Quantity}" onchange="updateQty(${index}, this.value)" class="form-control form-control-sm" />
+                                            </td>
+                                            <td>
+                                                ${item.Price * item.Quantity}
+                                            </td>
+                                            <td><button class="btn btn-sm btn-danger" onclick="removeItem(${index})">Xóa</button></td>
+                                        </tr>
+                                    `);
             });
-
+            if (cart.length > 0) {
+                tbody.append(`
+                                    <tr>
+                                        <td colspan="2" class="text-right"><strong>Tổng cộng</strong></td>
+                                        <td colspan="2"><strong>${total.toLocaleString()} VND</strong></td>
+                                    </tr>
+                                `);
+            }
             // Gán lại giá trị cho ItemsJson
             $('#itemsJson').val(JSON.stringify(cart));
         }
@@ -121,5 +135,14 @@
         $('form').submit(function () {
             console.log("ItemsJson sẽ gửi:", $('#itemsJson').val());
         });
+
     </script>
+    <style>
+        .field-validation-error {
+            color: red !important;
+            font-weight: bold;
+        }
+    </style>
+
+
 }

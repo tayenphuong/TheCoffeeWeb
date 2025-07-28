@@ -1,12 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="TheCoffeeModelStoreContainer" CdmEntityContainer="TheCoffeeEntities">
+    <EntitySetMapping Name="CancelOrders">
+      <EntityTypeMapping TypeName="TheCoffeeModel.CancelOrder">
+        <MappingFragment StoreEntitySet="CancelOrder">
+          <ScalarProperty Name="CancelID" ColumnName="CancelID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="CanceledBy" ColumnName="CanceledBy" />
+          <ScalarProperty Name="CancelDate" ColumnName="CancelDate" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="CartItems">
       <EntityTypeMapping TypeName="TheCoffeeModel.CartItem">
         <MappingFragment StoreEntitySet="CartItems">
-          <ScalarProperty Name="CartQuantity" ColumnName="CartQuantity" />
-          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
           <ScalarProperty Name="CartID" ColumnName="CartID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="CartQuantity" ColumnName="CartQuantity" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -26,24 +37,13 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Invoices">
-      <EntityTypeMapping TypeName="TheCoffeeModel.Invoice">
-        <MappingFragment StoreEntitySet="Invoices">
-          <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
-          <ScalarProperty Name="TimePrint" ColumnName="TimePrint" />
-          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
-          <ScalarProperty Name="Note" ColumnName="Note" />
-          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
-          <ScalarProperty Name="PaymentID" ColumnName="PaymentID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="OrderDetails">
       <EntityTypeMapping TypeName="TheCoffeeModel.OrderDetail">
         <MappingFragment StoreEntitySet="OrderDetail">
           <ScalarProperty Name="OrderQuantity" ColumnName="OrderQuantity" />
           <ScalarProperty Name="ProductID" ColumnName="ProductID" />
           <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -51,11 +51,13 @@
       <EntityTypeMapping TypeName="TheCoffeeModel.Order">
         <MappingFragment StoreEntitySet="Orders">
           <ScalarProperty Name="OrderID" ColumnName="OrderID" />
-          <ScalarProperty Name="Address" ColumnName="Address" />
           <ScalarProperty Name="OrderNote" ColumnName="OrderNote" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
           <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
-          <ScalarProperty Name="UserID" ColumnName="UserID" />
           <ScalarProperty Name="OrderTypeID" ColumnName="OrderTypeID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="CartID" ColumnName="CartID" />
+          <ScalarProperty Name="CreateAt" ColumnName="CreateAt" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -67,14 +69,23 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="PaymentMethods">
+      <EntityTypeMapping TypeName="TheCoffeeModel.PaymentMethod">
+        <MappingFragment StoreEntitySet="PaymentMethods">
+          <ScalarProperty Name="MethodID" ColumnName="MethodID" />
+          <ScalarProperty Name="MethodName" ColumnName="MethodName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Payments">
       <EntityTypeMapping TypeName="TheCoffeeModel.Payment">
         <MappingFragment StoreEntitySet="Payments">
           <ScalarProperty Name="PaymentID" ColumnName="PaymentID" />
-          <ScalarProperty Name="Method" ColumnName="Method" />
           <ScalarProperty Name="PaymentStatus" ColumnName="PaymentStatus" />
           <ScalarProperty Name="PaidAmount" ColumnName="PaidAmount" />
           <ScalarProperty Name="PaidAt" ColumnName="PaidAt" />
+          <ScalarProperty Name="MethodID" ColumnName="MethodID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -91,9 +102,9 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="ProductStatus">
-      <EntityTypeMapping TypeName="TheCoffeeModel.ProductStatu">
-        <MappingFragment StoreEntitySet="ProductStatus">
+    <EntitySetMapping Name="ProductStatuses">
+      <EntityTypeMapping TypeName="TheCoffeeModel.ProductStatus">
+        <MappingFragment StoreEntitySet="ProductStatuses">
           <ScalarProperty Name="StatusID" ColumnName="StatusID" />
           <ScalarProperty Name="StatusName" ColumnName="StatusName" />
         </MappingFragment>
@@ -102,12 +113,11 @@
     <EntitySetMapping Name="Ratings">
       <EntityTypeMapping TypeName="TheCoffeeModel.Rating">
         <MappingFragment StoreEntitySet="Ratings">
-          <ScalarProperty Name="RatingID" ColumnName="RatingID" />
           <ScalarProperty Name="Rating1" ColumnName="Rating" />
           <ScalarProperty Name="Comment" ColumnName="Comment" />
           <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
-          <ScalarProperty Name="UserID" ColumnName="UserID" />
           <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

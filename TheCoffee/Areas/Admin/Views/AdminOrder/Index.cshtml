@@ -15,12 +15,14 @@
             @TempData["Success"]
         </div>
     }
-
+    <p>
+        @Html.ActionLink("Tạo đơn", "Create", null, new { @class = "btn btn-primary btn-sm" })
+    </p>
     <table class="table table-bordered table-hover text-center">
         <thead class="table-dark">
             <tr>
                 <th>Mã đơn</th>
-                <th>Khách hàng</th>
+                <th>Người tạo</th>
                 <th>Loại đơn</th>
                 <th>Địa chỉ</th>
                 <th>Trạng thái</th>
@@ -29,7 +31,7 @@
         </thead>
         <tbody>
             @foreach (var order in Model)
-             {
+            {
                 <tr>
                     <td>@order.OrderID</td>
                     <td>@order.User.FullName</td>
@@ -62,10 +64,10 @@
                                     statusText = "Không rõ";
                                     statusClass = "badge bg-dark";
                                     break;
-                                }
                             }
+                        }
                         <span class="@statusClass"
-                              title="@(order.CancelOrder != null ? "Lý do: " + order.CancelOrder.Reason : "")">
+                              title="@(order.CancelOrders != null ? "Lý do: " + order.CancelOrders.FirstOrDefault()?.Reason: "")">
                             @statusText
                         </span>
                     </td>
@@ -76,16 +78,16 @@
                             @if (order.OrderStatus == 1)
                             {
                                 @Html.ActionLink("Xác nhận", "Confirm", new { id = order.OrderID }, new { @class = "btn btn-sm btn-outline-success" })
-                               
+
                             }
                             @if (order.OrderStatus != 3 && order.OrderStatus != 4)
                             {
-                              @Html.ActionLink("Hủy", "Cancel", new { id = order.OrderID }, new { @class = "btn btn-sm btn-outline-danger" })
+                                @Html.ActionLink("Hủy", "Cancel", new { id = order.OrderID }, new { @class = "btn btn-sm btn-outline-danger" })
                             }
                         </div>
                     </td>
                 </tr>
-             }
+            }
         </tbody>
     </table>
 </div>

@@ -1,0 +1,60 @@
+﻿@model List<TheCoffee.Models.Order>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Mã đơn</th>
+            <th>Khách hàng</th>
+            <th>Ngày tạo</th>
+            <th>Tổng tiền</th>
+            <th>Trạng thái</th>
+            @*<th>Chi tiết</th>*@
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>@order.OrderID</td>
+                <td>@order.User.FullName</td>
+                <td>@(order.CreateAt?.ToString("dd/MM/yyyy"))</td>
+                <td>@(order.OrderDetails.Sum(d => d.OrderQuantity * d.UnitPrice).ToString("N0")) VND</td>
+                @{
+                    string statusText = "";
+                    switch (order.OrderStatus)
+                    {
+                        case 1: statusText = "Chờ xác nhận"; break;
+                        case 2: statusText = "Đã xác nhận"; break;
+                        case 3: statusText = "Đang giao"; break;
+                        case 4: statusText = "Đã hủy"; break;
+                        case 5: statusText = "Đã hoàn thành"; break;
+                        default: statusText = "Không xác định"; break;
+                    }
+                }
+                <td>@statusText</td>
+                @*<td><a href="@Url.Action("Details", "AdminOrder", new { id = order.OrderID })" class="btn btn-info btn-sm">Xem</a></td>*@
+                <td>
+                    <div class="d-flex gap-2">
+                        @Html.ActionLink("Chi tiết", "Details", new { id = order.OrderID }, new { @class = "btn btn-sm btn-outline-info" })
+
+                        @if (order.OrderStatus == 1)
+                        {
+                            @Html.ActionLink("Xác nhận", "Confirm", new { id = order.OrderID }, new { @class = "btn btn-sm btn-outline-success" })
+                        }
+
+                        @if (order.OrderStatus == 2 || order.OrderStatus == 3)
+                        {
+                            @Html.ActionLink("Hoàn thành", "Complete", new { id = order.OrderID }, new { @class = "btn btn-sm btn-outline-primary" })
+                        }
+
+                        @if (order.OrderStatus != 3 && order.OrderStatus != 4 && order.OrderStatus != 5)
+                        {
+                            @Html.ActionLink("Hủy", "Cancel", new { id = order.OrderID }, new { @class = "btn btn-sm btn-outline-danger" })
+                        }
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

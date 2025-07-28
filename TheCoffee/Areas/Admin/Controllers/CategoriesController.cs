@@ -146,34 +146,11 @@ namespace TheCoffee.Areas.Admin.Controllers
         }
 
 
-        // POST
-        //[HttpPost, ActionName("Delete")]
-        //[ValidateAntiForgeryToken]
-        //public async Task<ActionResult> DeleteConfirmed(int id)
-        //{
-        //    Category category = await db.Categories.FindAsync(id);
-
-        //    if (category == null)
-        //    {
-        //        return HttpNotFound();
-        //    }
-
-        //    if (category.Products.Any())
-        //    {
-        //        ModelState.AddModelError("CategoryName", "Danh mục này đang tồn tại sản phẩm");
-        //        return View(category);
-        //    }
-
-        //    db.Categories.Remove(category); // Xóa cứng
-        //    await db.SaveChangesAsync();
-        //    return RedirectToAction("Index");
-        //}
-
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> DeleteConfirmed(int id)
         {
-            var category = await db.Categories.FindAsync(id); // ✅ Tìm đúng theo PK
+            var category = await db.Categories.FindAsync(id); 
 
             if (category == null)
             {

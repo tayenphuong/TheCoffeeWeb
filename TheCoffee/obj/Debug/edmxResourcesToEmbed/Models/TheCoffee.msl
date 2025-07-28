@@ -1,8 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="TheCoffeeWebModelStoreContainer" CdmEntityContainer="TheCoffeeEntities">
+  <EntityContainerMapping StorageEntityContainer="TheCoffeeModelStoreContainer" CdmEntityContainer="TheCoffeeEntities">
+    <EntitySetMapping Name="CancelOrders">
+      <EntityTypeMapping TypeName="TheCoffeeModel.CancelOrder">
+        <MappingFragment StoreEntitySet="CancelOrder">
+          <ScalarProperty Name="CancelID" ColumnName="CancelID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="CanceledBy" ColumnName="CanceledBy" />
+          <ScalarProperty Name="CancelDate" ColumnName="CancelDate" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="CartItems">
-      <EntityTypeMapping TypeName="TheCoffeeWebModel.CartItem">
+      <EntityTypeMapping TypeName="TheCoffeeModel.CartItem">
         <MappingFragment StoreEntitySet="CartItems">
           <ScalarProperty Name="CartID" ColumnName="CartID" />
           <ScalarProperty Name="ProductID" ColumnName="ProductID" />
@@ -11,7 +22,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Carts">
-      <EntityTypeMapping TypeName="TheCoffeeWebModel.Cart">
+      <EntityTypeMapping TypeName="TheCoffeeModel.Cart">
         <MappingFragment StoreEntitySet="Carts">
           <ScalarProperty Name="CartID" ColumnName="CartID" />
           <ScalarProperty Name="UserID" ColumnName="UserID" />
@@ -19,7 +30,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Categories">
-      <EntityTypeMapping TypeName="TheCoffeeWebModel.Category">
+      <EntityTypeMapping TypeName="TheCoffeeModel.Category">
         <MappingFragment StoreEntitySet="Categories">
           <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
           <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
@@ -27,19 +38,18 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="OrderDetails">
-      <EntityTypeMapping TypeName="TheCoffeeWebModel.OrderDetail">
+      <EntityTypeMapping TypeName="TheCoffeeModel.OrderDetail">
         <MappingFragment StoreEntitySet="OrderDetail">
-          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
           <ScalarProperty Name="OrderQuantity" ColumnName="OrderQuantity" />
           <ScalarProperty Name="ProductID" ColumnName="ProductID" />
           <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Orders">
-      <EntityTypeMapping TypeName="TheCoffeeWebModel.Order">
+      <EntityTypeMapping TypeName="TheCoffeeModel.Order">
         <MappingFragment StoreEntitySet="Orders">
-          <ScalarProperty Name="CreateAt" ColumnName="CreateAt" />
           <ScalarProperty Name="OrderID" ColumnName="OrderID" />
           <ScalarProperty Name="OrderNote" ColumnName="OrderNote" />
           <ScalarProperty Name="Address" ColumnName="Address" />
@@ -47,11 +57,12 @@
           <ScalarProperty Name="OrderTypeID" ColumnName="OrderTypeID" />
           <ScalarProperty Name="UserID" ColumnName="UserID" />
           <ScalarProperty Name="CartID" ColumnName="CartID" />
+          <ScalarProperty Name="CreateAt" ColumnName="CreateAt" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="OrderTypes">
-      <EntityTypeMapping TypeName="TheCoffeeWebModel.OrderType">
+      <EntityTypeMapping TypeName="TheCoffeeModel.OrderType">
         <MappingFragment StoreEntitySet="OrderTypes">
           <ScalarProperty Name="OrderTypeID" ColumnName="OrderTypeID" />
           <ScalarProperty Name="OrderTypeName" ColumnName="OrderTypeName" />
@@ -59,7 +70,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="PaymentMethods">
-      <EntityTypeMapping TypeName="TheCoffeeWebModel.PaymentMethod">
+      <EntityTypeMapping TypeName="TheCoffeeModel.PaymentMethod">
         <MappingFragment StoreEntitySet="PaymentMethods">
           <ScalarProperty Name="MethodID" ColumnName="MethodID" />
           <ScalarProperty Name="MethodName" ColumnName="MethodName" />
@@ -67,7 +78,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Payments">
-      <EntityTypeMapping TypeName="TheCoffeeWebModel.Payment">
+      <EntityTypeMapping TypeName="TheCoffeeModel.Payment">
         <MappingFragment StoreEntitySet="Payments">
           <ScalarProperty Name="PaymentID" ColumnName="PaymentID" />
           <ScalarProperty Name="PaymentStatus" ColumnName="PaymentStatus" />
@@ -79,7 +90,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Products">
-      <EntityTypeMapping TypeName="TheCoffeeWebModel.Product">
+      <EntityTypeMapping TypeName="TheCoffeeModel.Product">
         <MappingFragment StoreEntitySet="Products">
           <ScalarProperty Name="ProductID" ColumnName="ProductID" />
           <ScalarProperty Name="ProductName" ColumnName="ProductName" />
@@ -92,7 +103,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="ProductStatuses">
-      <EntityTypeMapping TypeName="TheCoffeeWebModel.ProductStatus">
+      <EntityTypeMapping TypeName="TheCoffeeModel.ProductStatus">
         <MappingFragment StoreEntitySet="ProductStatuses">
           <ScalarProperty Name="StatusID" ColumnName="StatusID" />
           <ScalarProperty Name="StatusName" ColumnName="StatusName" />
@@ -100,7 +111,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Ratings">
-      <EntityTypeMapping TypeName="TheCoffeeWebModel.Rating">
+      <EntityTypeMapping TypeName="TheCoffeeModel.Rating">
         <MappingFragment StoreEntitySet="Ratings">
           <ScalarProperty Name="Rating1" ColumnName="Rating" />
           <ScalarProperty Name="Comment" ColumnName="Comment" />
@@ -111,7 +122,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Roles">
-      <EntityTypeMapping TypeName="TheCoffeeWebModel.Role">
+      <EntityTypeMapping TypeName="TheCoffeeModel.Role">
         <MappingFragment StoreEntitySet="Roles">
           <ScalarProperty Name="RoleID" ColumnName="RoleID" />
           <ScalarProperty Name="RoleName" ColumnName="RoleName" />
@@ -119,7 +130,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Users">
-      <EntityTypeMapping TypeName="TheCoffeeWebModel.User">
+      <EntityTypeMapping TypeName="TheCoffeeModel.User">
         <MappingFragment StoreEntitySet="Users">
           <ScalarProperty Name="UserID" ColumnName="UserID" />
           <ScalarProperty Name="UserName" ColumnName="UserName" />
@@ -128,17 +139,6 @@
           <ScalarProperty Name="Phone" ColumnName="Phone" />
           <ScalarProperty Name="Email" ColumnName="Email" />
           <ScalarProperty Name="RoleID" ColumnName="RoleID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="CancelOrders">
-      <EntityTypeMapping TypeName="TheCoffeeWebModel.CancelOrder">
-        <MappingFragment StoreEntitySet="CancelOrder">
-          <ScalarProperty Name="CancelDate" ColumnName="CancelDate" />
-          <ScalarProperty Name="CancelReason" ColumnName="CancelReason" />
-          <ScalarProperty Name="CanceledBy" ColumnName="CanceledBy" />
-          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
-          <ScalarProperty Name="CancelID" ColumnName="CancelID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
